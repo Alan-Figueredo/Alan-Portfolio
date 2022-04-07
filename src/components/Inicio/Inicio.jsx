@@ -12,7 +12,7 @@ export const Inicio = () =>{
                 <Container>
                     <Row>
                         <div className="col-12 text-center">
-                            <img src="images/programer.png" alt="programer" className="img-fluid"/>
+                            <img src="images/programer.png" alt="programer" className="img-fluid" id="programer"/>
                         </div>
                     </Row>
                     <Row>
