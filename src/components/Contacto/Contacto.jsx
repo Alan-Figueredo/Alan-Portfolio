@@ -9,7 +9,7 @@ export const Contacto = () =>{
         <>
             <Container className="mt-sm-4 contacto">
                 <Row>
-                    <div className="col mb-4 mt-sm mt-3">
+                    <div className="col mb-4 mt-sm mt-4">
                         <h1>Contacto</h1>
                     </div>
                 </Row>     
