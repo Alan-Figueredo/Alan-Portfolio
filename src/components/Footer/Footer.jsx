@@ -20,8 +20,8 @@ export const Footer = () =>{
                     <div className="col-sm m-auto">
                         <a href="mailto:afigueredo2000@gmail.com" id="mail" >afigueredo2000@gmail.com</a>
                     </div>
-                </Row>      
-            </Container> 
+                </Row>
+            </Container>
         </>
     )
 }
