@@ -17,7 +17,7 @@ export const Footer = () =>{
                     <div className="col-sm col-6 text-sm text-center">
                         <a href="https://www.linkedin.com/in/alan-figueredo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in"/></a>
                     </div>
-                    <div className="col-sm text-center text-sm">
+                    <div className="col-sm text-center text-sm mt-sm mt-3">
                         <a href="mailto:afigueredo2000@gmail.com" id="mail">afigueredo2000@gmail.com</a>
                     </div>
                 </Row>
