@@ -94,7 +94,7 @@ export const SobreMi = () =>{
                     </Row>
                     <Row className="mb-2"> 
                         <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4 mb-5">
+                            <div className="card shadow p-4 mb-3">
                                 <Row>
                                     <div className="col-sm-3 col-3">
                                         <img src="images/depc.png" alt=""/>
@@ -120,7 +120,7 @@ export const SobreMi = () =>{
                             </div>
                         </div>
                         <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4" id="coderCard">
+                            <div className="card shadow p-4 mb-3" id="coderCard">
                                 <Row>
                                     <div className="col-sm-3 col-3">
                                         <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
@@ -146,8 +146,8 @@ export const SobreMi = () =>{
                         </div>
                     </Row>
                     <Row className="mb-5">
-                        <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4" id="coderCard">
+                        <div className="col-sm-6 col-12 ">
+                            <div className="card shadow p-4 mb-3" id="coderCard">
                                 <Row>
                                     <div className="col-sm-3 col-3">
                                         <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
@@ -172,7 +172,7 @@ export const SobreMi = () =>{
                             </div>
                         </div>
                         <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4" id="coderCard">
+                            <div className="card shadow p-4 mb-3" id="coderCard">
                                 <Row>
                                     <div className="col-sm-3 col-3">
                                         <img src="images/Educacion-IT.jpg" alt="" className="img-fluid" id="coder"/>
