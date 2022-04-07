@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import {  Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Proyectos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
