@@ -1,7 +1,7 @@
 .proyectos main{
     margin-top: 3%;
 }
-#btn_ver{
+.btn{
     background-color: #370A6D;
     color: white;
     border-radius: 20px;

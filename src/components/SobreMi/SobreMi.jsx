@@ -186,7 +186,6 @@ export const SobreMi = () =>{
                                                 <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
                                             </ul>
                                         </div>
-                                        
                                     </div>
                                 </Row>
                                 <Row>
