@@ -37,7 +37,7 @@ export const SobreMi = () =>{
                             return(
                                 <div className="col-4 col-sm-2 mb-3">
                                     <div className="card shadow">
-                                        <img src={record.icon} className="imgflud cards"/> <br/>
+                                        <img src={record.icon} alt="tecnologias" className="imgflud cards"/> <br/>
                                         <h3 className="text-center tec">{record.caption}</h3>
                                     </div>
                                 </div>

@@ -53,7 +53,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row id="rrr">
                                     <div className="col text-right mr-2">
-                                        <a href="#" id="cf">Código fuente</a>
+                                        <a  id="cf">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -73,7 +73,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row className="mt-sm-0 mt-4">
                                     <div className="col text-right mr-2">
-                                        <a href="#" id="cf">Código fuente</a>
+                                        <a id="cf">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>

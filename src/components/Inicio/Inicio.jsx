@@ -17,7 +17,7 @@ export const Inicio = () =>{
                     </Row>
                     <Row className="text-center mt-4">
                         <div className="col-sm-12">
-                            <a href="" id="mmt">Mirá mi trabajo</a>
+                            <a  id="mmt">Mirá mi trabajo</a> 
                         </div>
                     </Row>
                 </Container>
@@ -27,4 +27,4 @@ export const Inicio = () =>{
             </div>  
         </>
     )
-} 
+}
