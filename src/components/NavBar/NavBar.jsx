@@ -1,10 +1,9 @@
 import { Navbar } from "react-bootstrap"
 import { Container, Row } from "react-bootstrap"
 import "./NavBar.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavLink } from "react-router-dom";
+
 
 
 export const NavBar = () =>{
