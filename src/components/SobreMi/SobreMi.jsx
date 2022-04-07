@@ -92,7 +92,7 @@ export const SobreMi = () =>{
                             <h2 className="mt-5">Estudios</h2>
                         </div>
                     </Row>
-                    <Row className="mb-5"> 
+                    <Row className="mb-2"> 
                         <div className="col-sm-6 col-12">
                             <div className="card shadow p-4 mb-5">
                                 <Row>
@@ -145,7 +145,7 @@ export const SobreMi = () =>{
                             </div>
                         </div>
                     </Row>
-                    <Row>
+                    <Row className="mb-5">
                         <div className="col-sm-6 col-12">
                             <div className="card shadow p-4" id="coderCard">
                                 <Row>
