@@ -114,7 +114,7 @@ export const SobreMi = () =>{
                                 </Row>
                                 <Row>
                                     <div>
-                                        <a className="ml-3" target="_blank" rel="noopener noreferrer" href="https://depcsuite.com/?v=d72a48a8ebd2">VER EMPRESA</a>
+                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://depcsuite.com/?v=d72a48a8ebd2">VER EMPRESA</a>
                                     </div>
                                 </Row>
                             </div>
@@ -139,7 +139,7 @@ export const SobreMi = () =>{
                                 </Row>
                                 <Row>
                                     <div>
-                                        <a className="ml-3" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
+                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
                                     </div>
                                 </Row>
                             </div>
@@ -166,7 +166,7 @@ export const SobreMi = () =>{
                                 </Row>
                                 <Row>
                                     <div>
-                                        <a className="ml-3" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
+                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
                                     </div>
                                 </Row>
                             </div>
@@ -190,7 +190,7 @@ export const SobreMi = () =>{
                                 </Row>
                                 <Row>
                                     <div>
-                                        <a className="ml-3" target="_blank" rel="noopener noreferrer" href="https://www.educacionit.com/">VER EMPRESA</a>
+                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.educacionit.com/">VER EMPRESA</a>
                                     </div>
                                 </Row>
                             </div>
