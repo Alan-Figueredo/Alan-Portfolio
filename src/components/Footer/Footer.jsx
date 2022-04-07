@@ -11,14 +11,14 @@ export const Footer = () =>{
         <>
             <Container id="footer" className="mb-4">
                 <Row>
-                    <div className="col-sm m-auto">
+                    <div className="col-sm col-6 m-auto">
                         <a href="https://github.com/Alan-Figueredo" className="mr-2" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="fab fa-github"/></a>
                     </div>
-                    <div className="col-sm m-auto">
+                    <div className="col-sm col-6 m-auto">
                         <a href="https://www.linkedin.com/in/alan-figueredo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in"/></a>
                     </div>
                     <div className="col-sm m-auto">
-                        <a href="mailto:afigueredo2000@gmail.com" id="mail" >afigueredo2000@gmail.com</a>
+                        <a href="mailto:afigueredo2000@gmail.com" id="mail">afigueredo2000@gmail.com</a>
                     </div>
                 </Row>
             </Container>

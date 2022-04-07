@@ -52,7 +52,7 @@ export const Proyectos = () =>{
                                     <p>Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos.</p>
                                 </Row>
                                 <Row id="rrr">
-                                    <div className="col text-right mr-2">
+                                    <div className="col text-right mr-2 mt-2">
                                         <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" className="btn">Código fuente</a>
                                     </div>                                                            
                                 </Row>
@@ -69,9 +69,9 @@ export const Proyectos = () =>{
                                     <h2 className="my-2 text-center">PROYECTO INTEGRADOR</h2>
                                 </Row>
                                 <Row className="mx-1 mt-3">
-                                    <p>Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos y funcionalidades a fines.</p>
+                                    <p>Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos.</p>
                                 </Row>
-                                <Row className="mt-sm-0 mt-4">
+                                <Row className="mt-sm-0 mt-2">
                                     <div className="col text-right mr-2">
                                         <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" className="btn">Código fuente</a>
                                     </div>                                                            
