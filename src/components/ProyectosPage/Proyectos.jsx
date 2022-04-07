@@ -113,7 +113,7 @@ export const Proyectos = () =>{
                                 <Row className="mx-1 my-3">
                                     <p>Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.</p>
                                 </Row>
-                                <Row id="rrr">
+                                <Row className="mb-5">
                                     <div className="col text-right mr-2">
                                         <a href="https://github.com/Alan-Figueredo/mi-aplicacion" className="btn">Código fuente</a>
                                     </div>                                                            
