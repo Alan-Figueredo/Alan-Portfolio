@@ -33,7 +33,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row className="mb-5">
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/Alan-Figueredo/abmventas" target="_blank" rel="noopener noreferrer" id="cf">Código fuente</a>
+                                        <a href="https://github.com/Alan-Figueredo/abmventas" target="_blank" rel="noopener noreferrer" className="btn">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -53,7 +53,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row id="rrr">
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" id="cf">Código fuente</a>
+                                        <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" className="btn">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -73,7 +73,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row className="mt-sm-0 mt-4">
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" id="cf">Código fuente</a>
+                                        <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" className="btn">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -95,7 +95,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row className="mb-5">
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/Alan-Figueredo/simulador-de-compras" target="_blank" rel="noopener noreferrer" id="cf">Código fuente</a>
+                                        <a href="https://github.com/Alan-Figueredo/simulador-de-compras" target="_blank" rel="noopener noreferrer" className="btn">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -115,7 +115,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row id="rrr">
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/Alan-Figueredo/mi-aplicacion" id="cf">Código fuente</a>
+                                        <a href="https://github.com/Alan-Figueredo/mi-aplicacion" className="btn">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
