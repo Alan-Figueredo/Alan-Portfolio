@@ -171,7 +171,30 @@ export const SobreMi = () =>{
                                 </Row>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-12" style={{visibility:"hidden"}}>
+                        <div className="col-sm-6 col-12">
+                            <div className="card shadow p-4" id="coderCard">
+                                <Row>
+                                    <div className="col-sm-3 col-3">
+                                        <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
+                                    </div>
+                                    <div className="col mb-5">
+                                        <h3>Curso Analista Funcional</h3>
+                                        <h3>Educación IT</h3>
+                                        <h4>Julio 2021-Septiembre 2021</h4>
+                                        <div>
+                                            <ul>
+                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <div>
+                                        <a className="vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.educacionit.com/">VER EMPRESA</a>
+                                    </div>
+                                </Row>
+                            </div>
                         </div>
                     </Row>
                 </section>
