@@ -58,7 +58,7 @@ export const SobreMi = () =>{
                                 </div>
                                 <div className="col">
                                     <h3>IDIOMAS</h3>
-                                    <h4>INGLES-Intermedio b2</h4>
+                                    <h4>INGLES- FCE</h4>
                                     <h4>ESPAÑOL-Nativo</h4>
                                 </div>
                             </div>  
@@ -72,8 +72,9 @@ export const SobreMi = () =>{
                                 </div>
                                 <div className="col">
                                     <h3>HOBBIES</h3>
-                                    <h4>Musculación</h4>
+                                    <h4>Bateria</h4>
                                     <h4>Videojuegos</h4>
+                                    <h4>Programar</h4>
                                 </div>
                             </div>  
                         </div>
@@ -142,6 +143,35 @@ export const SobreMi = () =>{
                                     </div>
                                 </Row>
                             </div>
+                        </div>
+                    </Row>
+                    <Row>
+                        <div className="col-sm-6 col-12">
+                            <div className="card shadow p-4" id="coderCard">
+                                <Row>
+                                    <div className="col-sm-3 col-3">
+                                        <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
+                                    </div>
+                                    <div className="col mb-5">
+                                        <h3>Curso Js</h3>
+                                        <h3>Coder House</h3>
+                                        <h4>Septiembre 2021-Noviembre 2022</h4>
+                                        <div>
+                                            <ul>
+                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <div>
+                                        <a className="vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
+                                    </div>
+                                </Row>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-12" style={{visibility:"hidden"}}>
                         </div>
                     </Row>
                 </section>
