@@ -21,7 +21,7 @@ export const SobreMi = () =>{
                     </Row>
                 </div>
                 <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
-                    <img className="img-fluid avatar shadow" src="images/Alan.jpg" alt="Kevin Figueredo"/>
+                    <img className="img-fluid avatar shadow" src="images/Alan.jpg" alt="Alan Figueredo"/>
                 </div>
             </Row>
             <hr/>
