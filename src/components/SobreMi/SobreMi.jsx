@@ -120,7 +120,7 @@ export const SobreMi = () =>{
                             </div>
                         </div>
                         <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4 mb-3 mb-sm-5" id="coderCard">
+                            <div className="card shadow p-4 mb-3 mb-sm-5" >
                                 <Row>
                                     <div className="col-sm-3 col-3">
                                         <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
@@ -147,7 +147,7 @@ export const SobreMi = () =>{
                     </Row>
                     <Row className="mb-5">
                         <div className="col-sm-6 col-12 ">
-                            <div className="card shadow p-4 mb-3 mb-sm-5" id="coderCard">
+                            <div className="card shadow p-4 mb-3 mb-sm-5" >
                                 <Row>
                                     <div className="col-sm-3 col-3">
                                         <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
@@ -172,7 +172,7 @@ export const SobreMi = () =>{
                             </div>
                         </div>
                         <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4 mb-3 mb-sm-5" id="coderCard">
+                            <div className="card shadow p-4 mb-3 mb-sm-5" >
                                 <Row>
                                     <div className="col-sm-3 col-3">
                                         <img src="images/Educacion-IT.jpg" alt="" className="img-fluid" id="coder"/>
