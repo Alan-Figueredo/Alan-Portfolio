@@ -175,7 +175,7 @@ export const SobreMi = () =>{
                             <div className="card shadow p-4" id="coderCard">
                                 <Row>
                                     <div className="col-sm-3 col-3">
-                                        <img src="images/Educacion-IT.png" alt="" className="img-fluid" id="coder"/>
+                                        <img src="images/Educacion-IT.jpg" alt="" className="img-fluid" id="coder"/>
                                     </div>
                                     <div className="col mb-5">
                                         <h3>Curso Analista Funcional</h3>
