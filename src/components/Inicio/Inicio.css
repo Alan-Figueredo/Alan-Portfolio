@@ -3,7 +3,10 @@
     border-color: black;
     background-color: transparent;
     margin-left: 13%;
-    margin-top: 50%;
+    margin-top: 20%;
+}
+.index #programer{
+    margin-top: 30%;
 }
 .index .form-control{
     width: 75%;
