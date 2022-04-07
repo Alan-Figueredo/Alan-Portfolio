@@ -32,7 +32,7 @@ export const NavBar = () =>{
                             </ul>
                         </div>
                         <div className="text-right nav my-lg-0">
-                            <li><div className="text-right"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></div></li>
+                            <li><div className="text-right"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></div></li>
                         </div>
                     </Navbar>
                 </Row>
