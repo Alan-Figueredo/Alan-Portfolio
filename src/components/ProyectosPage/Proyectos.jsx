@@ -33,7 +33,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row className="mb-5">
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/Alan-Figueredo/abmventas" target="_blank" id="cf">Código fuente</a>
+                                        <a href="https://github.com/Alan-Figueredo/abmventas" target="_blank" rel="noopener noreferrer" id="cf">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -95,7 +95,7 @@ export const Proyectos = () =>{
                                 </Row>
                                 <Row className="mb-5">
                                     <div className="col text-right mr-2">
-                                        <a href="https://github.com/Alan-Figueredo/simulador-de-compras" target="_blank" id="cf">Código fuente</a>
+                                        <a href="https://github.com/Alan-Figueredo/simulador-de-compras" target="_blank" rel="noopener noreferrer" id="cf">Código fuente</a>
                                     </div>                                                            
                                 </Row>
                             </div>
@@ -128,7 +128,7 @@ export const Proyectos = () =>{
                 </Row>
             </Container>
             <div>
-                <a href="https://web.whatsapp.com/" target="_blank" ><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" ><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
             </div>  
         </>
     )
