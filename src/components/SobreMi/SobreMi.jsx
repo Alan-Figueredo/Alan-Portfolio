@@ -54,7 +54,7 @@ export const SobreMi = () =>{
                         <div className="card shadow">
                             <div className="row py-4 px-3"> 
                                 <div id="cardd" className="col-sm-3 col-5">
-                                    <FontAwesomeIcon icon={faCommentAlt} className="fa-comment-alt text-center "/> 
+                                    <FontAwesomeIcon icon={faCommentAlt} className="fa-comment-alt text-center my-4"/> 
                                 </div>
                                 <div className="col">
                                     <h3>IDIOMAS</h3>
@@ -68,7 +68,7 @@ export const SobreMi = () =>{
                         <div className="card shadow">
                             <div className="row py-4 px-3"> 
                                 <div id="cardd" className="col-sm-3 col-5">
-                                    <FontAwesomeIcon icon={faStar} className="fas fa-star text-center "/>
+                                    <FontAwesomeIcon icon={faStar} className="fas fa-star text-center my-4"/>
                                 </div>
                                 <div className="col">
                                     <h3>HOBBIES</h3>
