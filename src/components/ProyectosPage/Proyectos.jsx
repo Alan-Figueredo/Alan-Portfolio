@@ -9,17 +9,17 @@ export const Proyectos = () =>{
         <>
             <Container className="proyectos">
                 <Row>
-                    <div className="col mb-3 mt-4">
+                    <div className="col-sm col-12 mb-3 mt-4">
                         <h1>Mis proyectos</h1>
                     </div>
                 </Row>
                 <Row>
-                    <div className="col-sm-6 mb-4">
+                    <div className="col-sm-6 col-12 mb-4">
                         <p id="p1">Estos son los proyectos que fui realizando a medida que me iba forjando como desarrollador y estoy capacitado a realizar. </p>
                     </div>
                 </Row>          
                 <Row>
-                    <div className="col-sm-4">
+                    <div className="col-sm-4 col-12">
                         <div className="card shadow mb-3">
                             <div className="mx-3 my-3">
                                 <Row className="mb-3 mx-2">
@@ -39,7 +39,7 @@ export const Proyectos = () =>{
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-4 mb-3">
+                    <div className="col-sm-4 col-12 mb-3">
                         <div className="card shadow ">
                             <div className="mx-3 my-3">
                                 <Row className="mb-0 mx-2">
@@ -59,7 +59,7 @@ export const Proyectos = () =>{
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-4 mb-3">
+                    <div className="col-sm-4 col-12 mb-3">
                         <div className="card shadow">
                             <div className="mx-3 my-3">
                                 <Row className="mb-3 mx-2">
@@ -81,7 +81,7 @@ export const Proyectos = () =>{
                     </div>
                 </Row>
                 <Row>
-                    <div className="col-sm-4">
+                    <div className="col-sm-4 col-12">
                         <div className="card shadow mb-3">
                             <div className="mx-3 my-3">
                                 <Row className="mb-3 mx-2">
@@ -101,7 +101,7 @@ export const Proyectos = () =>{
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-4 mb-3">
+                    <div className="col-sm-4 col-12 mb-3">
                         <div className="card shadow ">
                             <div className="mx-3 my-3">
                                 <Row className="mb-0 mx-2">
@@ -121,7 +121,7 @@ export const Proyectos = () =>{
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-4 mb-3" style={{visibility: "hidden"}}>
+                    <div className="col-sm-4  mb-3" style={{visibility: "hidden"}}>
                         <div className="card shadow">
                         </div>
                     </div>
