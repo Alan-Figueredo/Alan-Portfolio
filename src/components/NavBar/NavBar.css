@@ -1,0 +1,46 @@
+.navbar-toggle{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color:blue;
+    border: 1px solid ;
+    border-radius: .25rem;
+}
+.li{
+    color: #282828;
+}
+.li:hover{
+    color: #282828;
+}
+.na{
+    color: #282828;
+    margin-top: 5px;
+    border:solid;
+    border-color: red;
+    border-width:2px;
+    background-color: rgb(255, 255, 255);
+    border-radius:12px;
+    padding: 1px 7px 1px 7px;
+}
+.na:hover{
+    background-color: #370A6D;
+    color: white;
+    text-decoration: none;
+    border-color: transparent;
+}
+#cv{
+    color:white;
+    background-color: #370A6D;
+    text-decoration: none;
+    border-radius:12px;
+    padding: 2px 12px 3px 12px;
+    margin-left: 10px;
+}
+#cv:hover{
+    background-color: #370A6D;
+    color: white;
+    text-decoration: none;
+}
+.item{
+    color: white;
+}

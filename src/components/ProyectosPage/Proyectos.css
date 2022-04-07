@@ -1,0 +1,53 @@
+.proyectos main{
+    margin-top: 3%;
+}
+#btn_ver{
+    background-color: #370A6D;
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+    padding: 8px 27px 8px 27px;
+    font-size: 12px;
+}
+.proyectos #p1{
+    color: #6A6A6A;
+}
+.proyectos h2{
+    color: white;
+    font-size: 15px;
+}
+#cf{
+    color: #370A6D;
+    font-size: 14px;
+    text-decoration: none;
+}
+.proyectos .card{
+    border-radius: 18px;
+    height: 470px;
+}
+.proyectos img{
+    padding: 15px;
+}
+.proyectos .sv{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,10,109,1) 19%, rgba(55,10,109,1) 81%, rgba(2,0,36,1) 100%);
+    padding: 7px 0px 7px 0px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+#rrr{
+    margin-top: -22px;
+}
+.fa-whatsapp{ 
+    font-size: 32px;
+    color: white;
+    padding: 14px 22px 41px 22px;
+    background-color: #370A6D;
+    border-radius: 12px 12px 0px 0px;
+    bottom: 0px;
+    left: 90%;
+    position: fixed;
+}
+.proyectos{
+    margin-bottom: 15vh;
+}

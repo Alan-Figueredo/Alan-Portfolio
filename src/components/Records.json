@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "caption": "Javascript",
+        "icon": "images/js.png"
+    },
+    {
+        "id": 2,
+        "caption": "Git",
+        "icon": "images/git.png"
+    },
+    {
+        "id": 3,
+        "caption": "HTML-5",
+        "icon": "images/html5.png"
+    },
+    {
+        "id": 4,
+        "caption": "React Js",
+        "icon": "images/react.png"
+    },
+    {
+        "id": 5,
+        "caption": "Jquery",
+        "icon" : "images/jquery.png"
+    },
+    {
+        "id": 6,
+        "caption": "Bootstrap",
+        "icon": "images/boot.png"
+    },
+    {
+        "id": 7,
+        "caption": "Word",
+        "icon": "images/word.png"
+    },
+    {
+        "id": 8,
+        "caption": "Excel",
+        "icon": "images/excel.png"
+    },
+    {
+        "id": 9,
+        "caption": "Photoshop",
+        "icon": "images/photo1.png"
+    },
+    {
+        "id": 10,
+        "caption": "CSS",
+        "icon": "images/css.png"
+    }
+]

@@ -1,0 +1,132 @@
+.sobre-mi .avatar{
+    border-radius: 7%;
+    height: 34vh;
+    width: 30vh;
+}
+.sobre-mi .card{
+    border-radius: 20px ;
+}
+.sobre-mi .tec{
+    font-size: 17px;
+}
+.sobre-mi .fa-graduation-cap{
+    font-size: 56px;
+}
+.sobre-mi .fa-briefcase{
+    font-size: 56px;
+}
+.sobre-mi .fa-comment-alt{
+    font-size: 50px;
+}
+.sobre-mi .fa-star{
+    font-size: 50px;
+}
+.sobre-mi #coder{
+    height: 9vh;
+}
+.sobre-mi #coderCard{
+    height: 26vh;
+}
+.sobre-mi #footer .fa-linkedin-in{
+    font-size: 25px;
+    color: white;
+    border-radius: 21px;
+    padding: 5px 6px 5px 6px;
+    background-color: black;
+    margin-top: 1px;
+}
+.sobre-mi .fa-linkedin-in{
+    font-size: 25px;
+    color: white;
+    border-radius: 21px;
+    padding: 5px 6px 5px 6px;
+    background-color: #370A6D;
+    margin-top: 1px;
+}
+.sobre-mi #footer .fa-github{
+    color: #370A6D;
+    font-size: 35px;
+    margin-top: 1px;
+}
+.sobre-mi .fa-github{
+    color: #370A6D;
+    font-size: 35px;
+    margin-top: 1px;
+}
+.sobre-mi #footer #mail{
+    color: #370A6D;
+}
+.sobre-mi #footer #depc{
+    color: #370A6D;
+}
+.sobre-mi .cv2{
+    color: white;
+    background-color: #370A6D;
+    border-radius: 25px;
+    padding: 8px 27px 8px 27px;
+    margin-left: 10px;
+}
+.sobre-mi .fa-star{
+    color: white;
+}
+.sobre-mi .fa-comment-alt{
+    color: white;
+}
+.sobre-mi .fa-graduation-cap{
+    color: black;
+}
+.sobre-mi .fa-briefcase{
+    color: #370A6D;
+}
+.sobre-mi #cardd{
+    background-color: #370A6D;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    margin: -24px;
+    margin-right: 5px;
+    margin-left: -4px;
+}
+.sobre-mi .vremprojo{
+    background-color: #370A6D;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    padding: 6px 16px 6px 16px;
+    font-size: 13px;
+    margin-left: 49vh;
+}
+.sobre-mi #tecolor{
+    background-color: #370A6D;
+}
+.spann{
+    font-size: 10px;
+}
+.sobre-mi h4{
+    font-size: 12px;
+}
+.sobre-mi h3{
+    font-size:18px;
+}
+.sobre-mi h2{
+    font-size: 24px;
+}
+.sobre-mi h1{
+    font-size: 35px;
+}
+.cards{
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    height: 19vh;
+    padding: 5px;
+}
+.fa-whatsapp{ 
+    font-size: 32px;
+    color: white;
+    padding: 14px 22px 41px 22px;
+    background-color: #370A6D;
+    border-radius: 12px 12px 0px 0px;
+    bottom: 0px;
+    left: 90%;
+    position: fixed;
+}

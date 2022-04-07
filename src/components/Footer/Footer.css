@@ -1,0 +1,26 @@
+#footer .fa-github{
+    color: black;
+    font-size: 35px;
+    margin-top: 1px;
+}
+#footer .fa-linkedin-in{
+    font-size: 25px;
+    color: white;
+    border-radius: 21px;
+    padding: 5px 6px 5px 6px;
+    background-color: black;
+    margin-top: 1px;
+}
+#mail{
+    color: black;
+}
+#depc{
+    color: black;
+}
+.proyectos #footer .fa-github{
+    color: black;
+}
+.proyectos #footer .fa-linkedin-in{
+    background-color: #E20000;
+    color: black;
+}
