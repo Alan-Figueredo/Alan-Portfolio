@@ -48,5 +48,15 @@
         "id": 10,
         "caption": "CSS",
         "icon": "images/css.png"
+    },
+    {
+        "id": 11,
+        "caption": "PHP",
+        "icon": "images/php.png"
+    },
+    {
+        "id": 12,
+        "caption": "SQL",
+        "icon": "images/sql.jfif"
     }
 ]
