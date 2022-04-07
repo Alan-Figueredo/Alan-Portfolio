@@ -23,7 +23,7 @@ export const Inicio = () =>{
                 </Container>
             </form>
             <div>
-                <a href="https://web.whatsapp.com/" target="_blank" ><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
             </div>  
         </>
     )

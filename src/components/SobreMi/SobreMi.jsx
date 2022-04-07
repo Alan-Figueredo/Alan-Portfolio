@@ -15,9 +15,9 @@ export const SobreMi = () =>{
                     <p>Mi nombre es Alan Figueredo y soy Desarrollador Web Front end. Soy un joven que busca su primera experiencia laboral en un equipo como desarrollador, para así seguir formandome, seguir aprendiendo y lograr mejorar mis habilidades tecnicas.</p>
                     <p>Abajo está mi stack tecnológico, como también mis estudios, idiomas que manejo y mis hobbies. </p>
                     <Row className="my-5">
-                        <a className="col-sm-1 col-2" href="https://github.com/kevinfigueredo2000/portfolio" target="_blank"><FontAwesomeIcon icon={faGithub} className="fab fa-github"/></a>
-                        <a className="col-sm-4 col-3" href="https://www.linkedin.com/in/kevin-figueredo-1512221a3/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in"/></a>
-                        <a className="col-sm-4 col-6 nav-link cv2 text-center " href="Kevincv.pdf" target="_blank">Descargar CV</a>
+                        <a className="col-sm-1 col-2" href="https://github.com/kevinfigueredo2000/portfolio" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="fab fa-github"/></a>
+                        <a className="col-sm-4 col-3" href="https://www.linkedin.com/in/kevin-figueredo-1512221a3/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in"/></a>
+                        <a className="col-sm-4 col-6 nav-link cv2 text-center " href="Kevincv.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
                     </Row>
                 </div>
                 <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
@@ -113,7 +113,7 @@ export const SobreMi = () =>{
                                 </Row>
                                 <Row>
                                     <div>
-                                        <a className="vremprojo" target="_blank" href="https://depcsuite.com/?v=d72a48a8ebd2">VER EMPRESA</a>
+                                        <a className="vremprojo" target="_blank" rel="noopener noreferrer" href="https://depcsuite.com/?v=d72a48a8ebd2">VER EMPRESA</a>
                                     </div>
                                 </Row>
                             </div>
@@ -138,7 +138,7 @@ export const SobreMi = () =>{
                                 </Row>
                                 <Row>
                                     <div>
-                                        <a className="vremprojo" target="_blank" href="https://www.coderhouse.com/">VER EMPRESA</a>
+                                        <a className="vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
                                     </div>
                                 </Row>
                             </div>
@@ -147,7 +147,7 @@ export const SobreMi = () =>{
                 </section>
             </Container>
             <div>
-                <a href="https://web.whatsapp.com/" target="_blank" ><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
             </div>  
         </Container>
     )
