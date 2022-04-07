@@ -1,9 +1,10 @@
 import { Navbar } from "react-bootstrap"
 import { Container, Row } from "react-bootstrap"
 import "./NavBar.css"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () =>{
@@ -12,22 +13,27 @@ export const NavBar = () =>{
             <Container>
                 <Row>
                     <Navbar className="navbar-expand-md px-0">
-                    <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-      data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
-</nav>
-<div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-light shadow-3 p-4">
-    <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-    <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
-    <button class="btn btn-link btn-block m-0">Link 3</button>
-  </div>
-</div>
+                        <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+                            <ul className="nav-bar nav">
+                                <Row>
+                                    <li className="nav-item col-sm">
+                                        <NavLink to="/" activeClassName="active" className=" nav-link  item">Inicio</NavLink>
+                                    </li>
+                                    <li className="nav-item col-sm ">
+                                        <NavLink to="sobre-mi" activeClassName="active" className=" nav-link item">Sobremi</NavLink>
+                                    </li>
+                                    <li className="nav-item col-sm">
+                                        <NavLink to="proyectos" activeClassName="active" className=" nav-link  item">Proyectos</NavLink>
+                                    </li>
+                                    <li className="nav-item col-sm">
+                                        <NavLink to="contacto" activeClassName="active" className=" nav-link  item">Contacto</NavLink>
+                                    </li>
+                                </Row>
+                            </ul>
+                        </div>
+                        <div className="text-right nav my-lg-0">
+                            <li><div className="text-right"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></div></li>
+                        </div>
                     </Navbar>
                 </Row>
             </Container>
