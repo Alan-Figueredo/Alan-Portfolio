@@ -17,7 +17,7 @@ export const Inicio = () =>{
                     </Row>
                     <Row>
                         <div className="col-sm-12">
-                            <input type="text" name="" id="srch" disabled className="form-control text-center" placeHolder="Hola, mi nombre es Alan, desarrolador web Full Stack"/>
+                            <input type="text" name="" id="srch" disabled className="form-control text-center" placeHolder="Hola, mi nombre es Alan, desarrolador web Frontend"/>
                         </div>
                     </Row>
                     <Row className="text-center mt-4">

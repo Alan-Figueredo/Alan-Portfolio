@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "caption": "ABM CLIENTES",
+        "img": "images/abmclientes.png",
+        "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
+        "code": "https://github.com/Alan-Figueredo/abmventas"
+    },
+    {
+        "id": 2,
+        "caption": "SISTEMA DE GESTIÓN DE VENTAS",
+        "img": "images/abmventas.png",
+        "description": "Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos.",
+        "code": "https://github.com/Alan-Figueredo/Alan-Portfolio"
+    },
+    {
+        "id": 3,
+        "caption": "PROYECTO INTEGRADOR",
+        "img": "images/sistema-admin.png",
+        "description": "Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos.",
+        "code": "https://github.com/Alan-Figueredo/Alan-Portfolio"
+    },
+    {
+        "id": 4,
+        "caption": "Tienda creada con JS",
+        "img": "images/Tienda-JS.png",
+        "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
+        "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
+    },
+    {
+        "id": 5,
+        "caption": "Tienda creada con REACT",
+        "img": "images/Tienda-react.png",
+        "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
+        "code": "https://github.com/Alan-Figueredo/mi-aplicacion"
+    }
+]
