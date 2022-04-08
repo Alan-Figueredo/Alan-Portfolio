@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "caption": "Desarrollador Web Fullstack",
+        "company" : "DePC Suite",
+        "img": "images/depc.png",
+        "date": "Agosto 2020-Enero 2021",
+        "proyects": "PROYECTO INTEGRADOR CON BASE DE DATOS",
+        "linkCompany": "https://depcsuite.com/?v=d72a48a8ebd2"
+    },
+    {
+        "id": 2,
+        "caption": "Curso React Js",
+        "company" : "Coder House",
+        "img": "images/coder.png",
+        "date": "Diciembre 2021-Febrero 2022",
+        "proyects": "PROYECTO INTEGRADOR CON BOOTSTRAP Y FIREBASE.",
+        "linkCompany": "https://www.coderhouse.com/"
+    },
+    {
+        "id": 3,
+        "caption": "Curso Js",
+        "company" : "Coder House",
+        "img": "images/coder.png",
+        "date": "Septiembre 2021-Noviembre 2022",
+        "proyects": "PROYECTO INTEGRADOR CON BOOSTRAP Y JQUERY.",
+        "linkCompany": "https://www.coderhouse.com/"
+    },
+    {
+        "id": 4,
+        "caption": "Curso Analista Funcional",
+        "company" : "Educación IT",
+        "img": "images/Educacion-IT.jpg",
+        "date": "Julio 2021-Septiembre 2021",
+        "proyects": "PROYECTO INTEGRADOR GRUPAL CON JIRA.",
+        "linkCompany": "https://www.educacionit.com/"
+    }
+]

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
 import Records from "../Records.json";
+import Studies from "../Studies.json"
 
 export const SobreMi = () =>{
     return(
@@ -92,109 +93,37 @@ export const SobreMi = () =>{
                             <h2 className="mt-5">Estudios</h2>
                         </div>
                     </Row>
-                    <Row className="mb-2"> 
-                        <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4 mb-3 mb-sm-5">
-                                <Row>
-                                    <div className="col-sm-3 col-3">
-                                        <img src="images/depc.png" alt=""/>
-                                    </div>
-                                    <div className="col">
-                                        <h3>Desarrollador Web Fullstack</h3>
-                                        <h3>DePC Suite</h3>
-                                        <h4>Agosto 2020-Enero 2021</h4>
-                                        <div>
-                                            <ul>
-                                                <li><span className="spann">ABM CLIENTES.</span></li>
-                                                <li><span className="spann">SISTEMA DE GESTIÓN DE VENTAS.</span></li>
-                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
-                                            </ul>
+                    <Row className="mb-2">
+                        {
+                            Studies && Studies.map( study=>{
+                                return(
+                                    <div className="col-sm-6 col-12">
+                                        <div className="card shadow p-4 mb-3 mb-sm-5">
+                                            <Row>
+                                                <div className="col-sm-3 col-3">
+                                                    <img src={study.img} className="img-fluid" alt=""/>
+                                                </div>
+                                                <div className="col">
+                                                    <h3>{study.caption}</h3>
+                                                    <h3>{study.company}</h3>
+                                                    <h4>{study.date}</h4>
+                                                    <div>
+                                                        <ul>
+                                                            <li><span className="spann">{study.proyects}</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </Row>
+                                            <Row>
+                                                <div>
+                                                    <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href={study.linkCompany}>VER EMPRESA</a>
+                                                </div>
+                                            </Row>
                                         </div>
                                     </div>
-                                </Row>
-                                <Row>
-                                    <div>
-                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://depcsuite.com/?v=d72a48a8ebd2">VER EMPRESA</a>
-                                    </div>
-                                </Row>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4 mb-3 mb-sm-5" >
-                                <Row>
-                                    <div className="col-sm-3 col-3">
-                                        <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
-                                    </div>
-                                    <div className="col mb-5">
-                                        <h3>Curso React Js</h3>
-                                        <h3>Coder House</h3>
-                                        <h4>Diciembre 2021-Febrero 2022</h4>
-                                        <div>
-                                            <ul>
-                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-                                </Row>
-                                <Row>
-                                    <div>
-                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
-                                    </div>
-                                </Row>
-                            </div>
-                        </div>
-                    </Row>
-                    <Row className="mb-5">
-                        <div className="col-sm-6 col-12 ">
-                            <div className="card shadow p-4 mb-3 mb-sm-5" >
-                                <Row>
-                                    <div className="col-sm-3 col-3">
-                                        <img src="images/coder.png" alt="" className="img-fluid" id="coder"/>
-                                    </div>
-                                    <div className="col mb-5">
-                                        <h3>Curso Js</h3>
-                                        <h3>Coder House</h3>
-                                        <h4>Septiembre 2021-Noviembre 2022</h4>
-                                        <div>
-                                            <ul>
-                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
-                                            </ul>
-                                        </div>
-                                        
-                                    </div>
-                                </Row>
-                                <Row>
-                                    <div>
-                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.coderhouse.com/">VER EMPRESA</a>
-                                    </div>
-                                </Row>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-12">
-                            <div className="card shadow p-4 mb-3 mb-sm-5" >
-                                <Row>
-                                    <div className="col-sm-3 col-3">
-                                        <img src="images/Educacion-IT.jpg" alt="" className="img-fluid" id="coder"/>
-                                    </div>
-                                    <div className="col mb-5">
-                                        <h3>Curso Analista Funcional</h3>
-                                        <h3>Educación IT</h3>
-                                        <h4>Julio 2021-Septiembre 2021</h4>
-                                        <div>
-                                            <ul>
-                                                <li><span className="spann">PROYECTO INTEGRADOR.</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </Row>
-                                <Row>
-                                    <div>
-                                        <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href="https://www.educacionit.com/">VER EMPRESA</a>
-                                    </div>
-                                </Row>
-                            </div>
-                        </div>
+                                )
+                            })
+                        }
                     </Row>
                 </section>
             </Container>
