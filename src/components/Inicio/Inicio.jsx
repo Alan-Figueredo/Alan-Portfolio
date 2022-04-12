@@ -28,9 +28,6 @@ export const Inicio = () =>{
                     </Row>
                 </Container>
             </form>
-            <div>
-                <a href="https://api.whatsapp.com/send?phone=+541151212855&text=%C2%A1Hola!%20Gracias%20por%20contactar%20conmigo.%20Deja%20tu%20mensaje,%20te%20respondere%20en%20breve." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-whatsapp"/></a>
-            </div>  
         </>
     )
 }
