@@ -44,3 +44,31 @@
 .item{
     color: white;
 }
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.hamburger:focus{
+    outline: none;
+}
+nav{
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 767px){
+    .nav-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-ul.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+}
