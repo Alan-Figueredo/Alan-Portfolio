@@ -12,22 +12,7 @@
 .li:hover{
     color: #282828;
 }
-.na{
-    color: #282828;
-    margin-top: 5px;
-    border:solid;
-    border-color: red;
-    border-width:2px;
-    background-color: rgb(255, 255, 255);
-    border-radius:12px;
-    padding: 1px 7px 1px 7px;
-}
-.na:hover{
-    background-color: #370A6D;
-    color: white;
-    text-decoration: none;
-    border-color: transparent;
-}
+
 #cv{
     color:white;
     background-color: #370A6D;
@@ -55,8 +40,21 @@
 .hamburger:focus{
     outline: none;
 }
-nav{
-    flex-wrap: wrap;
+
+
+.nav-link{
+    margin-inline-end: 60px;
+}
+
+.fa-whatsapp{ 
+    font-size: 32px;
+    color: white;
+    padding: 14px 22px 41px 22px;
+    background-color: #370A6D;
+    border-radius: 12px 12px 0px 0px;
+    bottom: 0px;
+    left: 95%;
+    position: fixed;
 }
 @media screen and (max-width: 767px){
     .nav-ul{

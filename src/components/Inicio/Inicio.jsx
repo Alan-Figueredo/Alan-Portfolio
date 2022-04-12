@@ -22,7 +22,7 @@ export const Inicio = () =>{
                     </Row>
                     <Row className="text-center mt-4">
                         <div className="col-sm-12">
-                            <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" id="mmt">Mirá mi trabajo</a>
+                            <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" id="botonTrabajo">Mirá mi trabajo</a>
                         </div>
                     </Row>
                 </Container>

@@ -13,8 +13,8 @@ export const NavBar = () =>{
         <div className="bg-black py-3">
             <Container>
                 <Row>
-                    <Navbar className="navbar-expand-md px-0">
-                        <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <Navbar className=" px-0">
+                        <div >
                             <button className="hamburger" id="hamburger" onClick={()=>{
                                     document.getElementById("nav-ul").classList.toggle("show");
                                 }}>
@@ -35,8 +35,8 @@ export const NavBar = () =>{
                                 </li> 
                             </ul>
                         </div>
-                        <div className="text-right nav col-sm col-12 text-sm text-right my-lg-0">
-                            <li><div className="text-right"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></div></li>
+                        <div className="nav text-sm  my-lg-0">
+                            <li><div><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></div></li>
                         </div>
                     </Navbar>
                 </Row>
