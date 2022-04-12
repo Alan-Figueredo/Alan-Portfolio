@@ -4,6 +4,7 @@ import { Container, Row } from "react-bootstrap";
 import "./Inicio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";
 
 export const Inicio = () =>{
     return(
@@ -22,7 +23,7 @@ export const Inicio = () =>{
                     </Row>
                     <Row className="text-center mt-4">
                         <div className="col-sm-12">
-                            <a href="https://github.com/Alan-Figueredo/Alan-Portfolio" id="botonTrabajo">Mirá mi trabajo</a>
+                            <NavLink id="linkBotonTrabajo" to="sobre-mi"><a href="#" id="botonTrabajo">Mirá mi trabajo</a></NavLink>
                         </div>
                     </Row>
                 </Container>

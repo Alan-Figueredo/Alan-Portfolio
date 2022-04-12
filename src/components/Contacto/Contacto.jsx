@@ -15,7 +15,7 @@ export const Contacto = () =>{
                 </Row>     
                 <Row>
                     <div className="col-sm col-12">
-                        <p>Cualquier consulta o duda enviar un mensaje o bien un Whatsapp mediante el botón de la esquina inferior derecha.</p>
+                        <p>Cualquier consulta o duda sobre mis proyectos enviar un mensaje o bien un Whatsapp mediante el botón de la esquina inferior derecha, responderé a la brevedad.</p>
                     </div>
                     <div className="col-12 col-sm-6">
                         <form action="" method="POST">
