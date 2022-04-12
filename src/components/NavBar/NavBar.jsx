@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () =>{
-    const navUl = document.getElementById("nav-ul");
     return(
         <div className="bg-black py-3">
             <Container>
@@ -17,7 +16,7 @@ export const NavBar = () =>{
                     <Navbar className="navbar-expand-md px-0">
                         <div className="collapse navbar-collapse" id="navbarsExampleDefault">
                             <button className="hamburger" id="hamburger" onClick={()=>{
-                                    navUl.classList.toggle("show");
+                                    document.getElementById("nav-ul").classList.toggle("show");
                                 }}>
                                 <FontAwesomeIcon icon={faBars}/>
                             </button>
