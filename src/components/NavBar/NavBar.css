@@ -46,16 +46,6 @@
     margin-inline-end: 60px;
 }
 
-.fa-whatsapp{ 
-    font-size: 32px;
-    color: white;
-    padding: 14px 22px 41px 22px;
-    background-color: #370A6D;
-    border-radius: 12px 12px 0px 0px;
-    bottom: 0px;
-    left: 95%;
-    position: fixed;
-}
 @media screen and (max-width: 767px){
     .nav-ul{
         display: none;
