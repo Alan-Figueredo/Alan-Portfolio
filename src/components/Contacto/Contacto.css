@@ -1,11 +1,16 @@
-*{
-    background-image: "";
+.contacto{
+    background-image:url("../../../public/images/taza-javascript.png");
+    background-repeat: none;
+    background-size: 100%;
 }
 .contacto main{
     margin-top: 4%;
 }
 .contacto p{
-    color: #6A6A6A;
+    color: #ffffff;
+}
+#contactoH1{
+    color: #ffffff;
 }
 .contacto #nombre{ 
     margin-bottom: -15px;

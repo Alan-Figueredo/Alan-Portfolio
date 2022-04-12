@@ -10,7 +10,7 @@
         "id": 2,
         "caption": "SISTEMA DE GESTIÓN DE VENTAS",
         "img": "images/abmventas.png",
-        "description": "Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, MVC, Bootstrap, Js, Ajax, jQuery y MySQL de base de datos.",
+        "description": "Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, Bootstrap, Js, Ajax, jQuery y MySQL.",
         "code": "https://github.com/Alan-Figueredo/Alan-Portfolio"
     },
     {

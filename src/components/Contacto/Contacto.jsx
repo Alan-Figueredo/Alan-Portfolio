@@ -10,7 +10,7 @@ export const Contacto = () =>{
             <Container className="mt-sm-4 contacto">
                 <Row>
                     <div className="col mb-4 mt-sm mt-4">
-                        <h1>Contacto</h1>
+                        <h1 id="contactoH1">Contacto</h1>
                     </div>
                 </Row>     
                 <Row>
@@ -22,8 +22,8 @@ export const Contacto = () =>{
                             <input type="text" name="txtNombre" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
                             <input type="email" name="txtCorreo" id="email" placeholder="Email" className="shadow form-control"/>
                             <textarea name="txtMensaje" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control"/>
-                            <div class="mr-0">
-                                <input type="submit" value="Enviar" id="enviar"/>
+                            <div>
+                                <input  className="mb-3" type="submit" value="Enviar" id="enviar"/>
                             </div>
                         </form>
                     </div>
