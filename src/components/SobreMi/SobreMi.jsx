@@ -4,8 +4,8 @@ import "./SobreMi.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
-import Records from "../Records.json";
-import Studies from "../Studies.json"
+import StackTecnologico from "../SobreMi/StackTecnologico";
+import Estudios from "../SobreMi/Estudios";
 
 export const SobreMi = () =>{
     return(
@@ -33,19 +33,7 @@ export const SobreMi = () =>{
                     </div>
                 </Row>
                 <Row className="mb-3 inner">
-                    {
-                        Records && Records.map( record =>{
-                            return(
-                                <div className="col-6 col-sm-2 mb-3">
-                                    <div className="card shadow">
-                                        <img src={record.icon} alt="tecnologias" className="imgflud cards"/> <br/>
-                                        <h3 className="text-center tec">{record.caption}</h3>
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
-                   
+                   <StackTecnologico/>
                 </Row>        
             </Container>
             <hr/>
@@ -94,36 +82,7 @@ export const SobreMi = () =>{
                         </div>
                     </Row>
                     <Row className="mb-2">
-                        {
-                            Studies && Studies.map( study=>{
-                                return(
-                                    <div className="col-sm-6 col-12">
-                                        <div className="card shadow p-4 mb-3 mb-sm-5">
-                                            <Row>
-                                                <div className="col-sm-3 col-3">
-                                                    <img src={study.img} className="img-fluid" alt=""/>
-                                                </div>
-                                                <div className="col">
-                                                    <h3>{study.caption}</h3>
-                                                    <h3>{study.company}</h3>
-                                                    <h4>{study.date}</h4>
-                                                    <div>
-                                                        <ul>
-                                                            <li><span className="spann">{study.proyects}</span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </Row>
-                                            <Row>
-                                                <div>
-                                                    <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href={study.linkCompany}>VER EMPRESA</a>
-                                                </div>
-                                            </Row>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
+                        <Estudios/>
                     </Row>
                 </section>
             </Container>
