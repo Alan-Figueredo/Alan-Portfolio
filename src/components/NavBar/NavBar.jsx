@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () =>{
-    const hamburger = document.getElementById("hamburger");
     const navUl = document.getElementById("nav-ul");
     return(
         <div className="bg-black py-3">
@@ -31,10 +30,10 @@ export const NavBar = () =>{
                                 </li>
                                 <li className="nav-item col-sm">
                                     <NavLink to="proyectos" activeClassName="active" className=" nav-link  item">Proyectos</NavLink>
-                                </li>
+                                </li> 
                                 <li className="nav-item col-sm">
                                     <NavLink to="contacto" activeClassName="active" className=" nav-link  item">Contacto</NavLink>
-                                </li>
+                                </li> 
                             </ul>
                         </div>
                         <div className="text-right nav col-sm col-12 text-sm text-right my-lg-0">
