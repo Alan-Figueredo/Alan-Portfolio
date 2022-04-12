@@ -17,9 +17,10 @@
     color:white;
     background-color: #370A6D;
     text-decoration: none;
+    float: right;
     border-radius:12px;
     padding: 2px 12px 3px 12px;
-    margin-left: 10px;
+    margin-left: 570px;
 }
 #cv:hover{
     background-color: #370A6D;
@@ -51,12 +52,16 @@
         display: none;
         flex-direction: column;
         width: 100%;
-        text-align: center;
+        text-align:justify;
     }
     .nav-ul.show{
         display: flex;
     }
     .hamburger{
         display: block;
+        margin-left: 10px;
+    }
+    #cv{
+        margin-left: 0px;
     }
 }
