@@ -22,7 +22,7 @@ export const Contacto = () =>{
                             <input type="text" name="txtNombre" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
                             <input type="email" name="txtCorreo" id="email" placeholder="Email" className="shadow form-control"/>
                             <textarea name="txtMensaje" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control"/>
-                            <div class="mr-0 text-right">
+                            <div class="mr-0">
                                 <input type="submit" value="Enviar" id="enviar"/>
                             </div>
                         </form>

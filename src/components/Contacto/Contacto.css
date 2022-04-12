@@ -24,6 +24,8 @@
     border-color:transparent;
     background-color: #370A6D;
     color: white;
+    margin-top: 5px;
+    float: right;
     padding: 6px 42px 6px 42px;
 }
 .contacto{
