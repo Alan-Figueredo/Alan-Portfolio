@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Helmet} from "react-helmet";
 
 ReactDOM.render(
   <React.StrictMode>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Alan Figueredo Portfolio</title>
+      <link rel="canonical" href="http://mysite.com/example" />
+      <meta name="description" content="Alan Figueredo Portfolio" />
+    </Helmet>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
