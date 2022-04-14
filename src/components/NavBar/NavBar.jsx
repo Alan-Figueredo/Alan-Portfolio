@@ -21,16 +21,16 @@ export const NavBar = () =>{
                                 <FontAwesomeIcon icon={faBars}/>
                             </button>
                             <ul className="nav-bar nav nav-ul" id="nav-ul">
-                                <li className="nav-item col-sm">
+                                <li className="nav-item">
                                     <NavLink to="/" activeClassName="active" className=" nav-link  item">Inicio</NavLink>
                                 </li>
-                                <li className="nav-item col-sm ">
-                                    <NavLink to="sobre-mi" activeClassName="active" className=" nav-link item">Sobremi</NavLink>
+                                <li className="nav-item ">
+                                    <NavLink to="sobre-mi" activeClassName="active" className=" nav-link item">Sobre mi</NavLink>
                                 </li>
-                                <li className="nav-item col-sm">
+                                <li className="nav-item">
                                     <NavLink to="proyectos" activeClassName="active" className=" nav-link  item">Proyectos</NavLink>
                                 </li> 
-                                <li className="nav-item col-sm">
+                                <li className="nav-item">
                                     <NavLink to="contacto" activeClassName="active" className=" nav-link  item">Contacto</NavLink>
                                 </li> 
                                 <li className="mt-1"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></li>
