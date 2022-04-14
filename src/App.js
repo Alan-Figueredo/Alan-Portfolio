@@ -11,13 +11,13 @@ import { Helmet } from "react-helmet";
 function App() {
   return (
   <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Alan Figueredo Portfolio</title>
-      <link rel="canonical" href="http://mysite.com/example" />
-      <meta name="description" content="Alan Figueredo Portfolio" />
-    </Helmet>
     <Router>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Alan Figueredo Portfolio</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <meta name="description" content="Alan Figueredo Portfolio" />
+      </Helmet>
       <NavBar/>
       <Routes>
           <Route index path="/" element={<Inicio/>}/>
