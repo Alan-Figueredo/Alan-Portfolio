@@ -7,7 +7,6 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 export const Contacto = () =>{
-    const alertaMensaje = document.getElementById("alertaMensaje")
     const form = useRef();
 
     const sendEmail = (e) => {
