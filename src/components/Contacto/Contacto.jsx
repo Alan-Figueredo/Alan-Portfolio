@@ -3,8 +3,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contacto.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export const Contacto = () =>{
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('gmail', 'template_qmxhiv3', e.target, '-1FLgxPUmudOciL-d')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+    };
     return(
         <>
             <Container className="mt-sm-4 contacto">
@@ -18,7 +33,7 @@ export const Contacto = () =>{
                         <p>Cualquier consulta o duda sobre mis proyectos enviar un mensaje o bien un Whatsapp mediante el botón de la esquina inferior derecha, responderé a la brevedad.</p>
                     </div>
                     <div className="col-12 col-sm-6">
-                        <form action="" method="POST">
+                        <form action="" method="POST" ref={form} onSubmit={sendEmail}>
                             <input type="text" name="txtNombre" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
                             <input type="email" name="txtCorreo" id="email" placeholder="Email" className="shadow form-control"/>
                             <textarea name="txtMensaje" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control"/>
