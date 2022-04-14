@@ -1,8 +1,6 @@
 import {  Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Proyectos.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import CardProyectos from "./CardProyectos";
 
 export const Proyectos = () =>{
