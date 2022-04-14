@@ -3,10 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contacto.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 export const Contacto = () =>{
+    const [alertaMensaje, setAlertaMensaje] = useState(true);
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -15,7 +16,8 @@ export const Contacto = () =>{
       emailjs.sendForm('gmail', 'template_qmxhiv3', e.target, '-1FLgxPUmudOciL-d')
         .then((result) => {
             console.log(result.text);
-            
+            setAlertaMensaje(false);
+            setTimeout(setAlertaMensaje(true), 2000)
         }, (error) => {
             console.log(error.text);
         });
@@ -42,7 +44,9 @@ export const Contacto = () =>{
                                 <input  className="mb-3" type="submit" value="Enviar" id="enviar"/>
                             </div>
                             <div id="alertaMensaje">
-
+                                <div className="alert alert-success" hidden={alertaMensaje} role="alert">
+                                    ¡Se ha enviado el mensaje correctamente!
+                                </div>
                             </div>
                         </form>
                     </div>
