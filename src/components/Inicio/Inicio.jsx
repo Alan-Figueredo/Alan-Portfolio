@@ -21,7 +21,7 @@ export const Inicio = () =>{
                     </Row>
                     <Row className="text-center mt-4">
                         <div className="col-sm-12">
-                            <NavLink id="linkBotonTrabajo" to="sobre-mi"><a href="#" id="botonTrabajo">Mirá mi trabajo</a></NavLink>
+                            <NavLink id="linkBotonTrabajo" to="sobre-mi"><a id="botonTrabajo">Mirá mi trabajo</a></NavLink>
                         </div>
                     </Row>
                 </Container>
