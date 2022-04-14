@@ -8,7 +8,10 @@ import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () =>{
-
+    const estadoBarra = ()=>{
+        document.getElementById("nav-ul").removeClass("show")
+        document.getElementById("nav-ul").classList.toggle("hide");
+    }
     return(
         <div className="bg-black py-3">
             <Container>
@@ -22,24 +25,16 @@ export const NavBar = () =>{
                             </button>
                             <ul className="nav-bar nav nav-ul" id="nav-ul">
                                 <li className="nav-item">
-                                    <NavLink to="/" activeClassName="active" className=" nav-link  item"  onClick={()=>{
-                                        document.getElementById("nav-ul").removeClass("show")
-                                        document.getElementById("nav-ul").classList.toggle("hide");}}>Inicio</NavLink>
+                                    <NavLink to="/" activeClassName="active" className=" nav-link  item"  onClick={()=>{estadoBarra()}}>Inicio</NavLink>
                                 </li>
                                 <li className="nav-item ">
-                                    <NavLink to="sobre-mi" activeClassName="active" className=" nav-link item" onClick={()=>{
-                                        document.getElementById("nav-ul").removeClass("show")
-                                        document.getElementById("nav-ul").classList.toggle("hide");}}>Sobre mi</NavLink>
+                                    <NavLink to="/sobre-mi" activeClassName="active" className=" nav-link item" onClick={()=>{estadoBarra()}}>Sobre mi</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="proyectos" activeClassName="active" className=" nav-link  item" onClick={()=>{
-                                        document.getElementById("nav-ul").removeClass("show")
-                                        document.getElementById("nav-ul").classList.toggle("hide");}}>Proyectos</NavLink>
+                                    <NavLink to="/proyectos" activeClassName="active" className=" nav-link  item" onClick={()=>{estadoBarra()}}>Proyectos</NavLink>
                                 </li> 
                                 <li className="nav-item">
-                                    <NavLink to="contacto" activeClassName="active" className=" nav-link  item" onClick={()=>{
-                                        document.getElementById("nav-ul").removeClass("show")
-                                        document.getElementById("nav-ul").classList.toggle("hide");}}>Contacto</NavLink>
+                                    <NavLink to="/contacto" activeClassName="active" className=" nav-link  item" onClick={()=>{estadoBarra()}}>Contacto</NavLink>
                                 </li> 
                                 <li className="mt-1"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></li>
                             </ul>
