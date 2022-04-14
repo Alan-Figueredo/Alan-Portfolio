@@ -82,10 +82,11 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.sobre-mi .vremprojo{
+.sobre-mi .verEmpresa{
     background-color: #370A6D;
     text-decoration: none;
     color: white;
+    float: right;
     border-radius: 25px;
     padding: 6px 16px 6px 16px;
     font-size: 13px;
@@ -113,4 +114,16 @@
     max-width: 100%;
     height: 19vh;
     padding: 5px;
+}
+
+.imgEstudios{
+    height: auto;
+    max-width: 70%;
+}
+
+@media screen and (max-width: 767px){
+    .imgEstudios{
+        height: auto;
+        max-width: 100%;
+    }
 }

@@ -8,7 +8,7 @@ const Estudios = ()=>{
                     <div className="card shadow p-4 mb-3 mb-sm-5">
                         <Row>
                             <div className="col-sm-3 col-3">
-                                <img src={study.img} className="img-fluid" alt=""/>
+                                <img src={study.img} className="imgEstudios" alt=""/>
                             </div>
                             <div className="col">
                                 <h3>{study.caption}</h3>
@@ -23,7 +23,7 @@ const Estudios = ()=>{
                         </Row>
                         <Row>
                             <div>
-                                <a className="ml-3 vremprojo" target="_blank" rel="noopener noreferrer" href={study.linkCompany}>VER EMPRESA</a>
+                                <a className="ml-3 verEmpresa" target="_blank" rel="noopener noreferrer" href={study.linkCompany}>VER EMPRESA</a>
                             </div>
                         </Row>
                     </div>

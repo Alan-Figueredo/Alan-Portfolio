@@ -7,6 +7,7 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 export const Contacto = () =>{
+    const alertaMensaje = document.getElementById("alertaMensaje")
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -15,6 +16,7 @@ export const Contacto = () =>{
       emailjs.sendForm('gmail', 'template_qmxhiv3', e.target, '-1FLgxPUmudOciL-d')
         .then((result) => {
             console.log(result.text);
+            
         }, (error) => {
             console.log(error.text);
         });
@@ -39,6 +41,9 @@ export const Contacto = () =>{
                             <textarea name="message" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control"/>
                             <div>
                                 <input  className="mb-3" type="submit" value="Enviar" id="enviar"/>
+                            </div>
+                            <div id="alertaMensaje">
+
                             </div>
                         </form>
                     </div>
