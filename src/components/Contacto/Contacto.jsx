@@ -4,7 +4,7 @@ import "./Contacto.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
 export const Contacto = () =>{
     const form = useRef();
