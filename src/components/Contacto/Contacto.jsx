@@ -17,7 +17,6 @@ export const Contacto = () =>{
         .then((result) => {
             console.log(result.text);
             setAlertaMensaje(false);
-            setTimeout(setAlertaMensaje(true), 2000)
         }, (error) => {
             console.log(error.text);
         });

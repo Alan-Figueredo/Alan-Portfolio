@@ -28,16 +28,16 @@ export const NavBar = () =>{
                             </button>
                             <ul className="nav-bar nav nav-ul" id="nav-ul">
                                 <li className="nav-item">
-                                    <NavLink to="/" activeClassName="active" className=" nav-link  item"  onClick={handleClick()}>Inicio</NavLink>
+                                    <NavLink to="/" activeClassName="active" className=" nav-link  item"  onClick={()=>{handleClick()}}>Inicio</NavLink>
                                 </li>
                                 <li className="nav-item ">
-                                    <NavLink to="sobre-mi" activeClassName="active" className=" nav-link item" onClick={handleClick()}>Sobre mi</NavLink>
+                                    <NavLink to="sobre-mi" activeClassName="active" className=" nav-link item" onClick={()=>{handleClick()}}>Sobre mi</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="proyectos" activeClassName="active" className=" nav-link  item" onClick={handleClick()}>Proyectos</NavLink>
+                                    <NavLink to="proyectos" activeClassName="active" className=" nav-link  item" onClick={()=>{handleClick()}}>Proyectos</NavLink>
                                 </li> 
                                 <li className="nav-item">
-                                    <NavLink to="contacto" activeClassName="active" className=" nav-link  item" onClick={handleClick()}>Contacto</NavLink>
+                                    <NavLink to="contacto" activeClassName="active" className=" nav-link  item" onClick={()=>{handleClick()}}>Contacto</NavLink>
                                 </li> 
                                 <li className="mt-1"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></li>
                             </ul>
