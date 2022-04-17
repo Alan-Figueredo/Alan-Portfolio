@@ -6,12 +6,14 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faCommentAlt, faStar } from "@fortawesome/free-solid-svg-icons";
 import StackTecnologico from "../SobreMi/StackTecnologico";
 import Estudios from "../SobreMi/Estudios";
-
+import { Contacto } from "../Contacto/Contacto";
+import { Proyectos } from "../ProyectosPage/Proyectos";
 export const SobreMi = () =>{
     return(
         <Container className="sobre-mi">
+            <Proyectos/>
             <Row className="my-4">
-                <div className="col-sm-6">
+                <div id="sobreMi" className="col-sm-6">
                     <h1 id="hsob">Sobre Mí</h1>
                     <p>Mi nombre es Alan Figueredo y soy Desarrollador Web Front end. Soy un joven que busca su primera experiencia laboral en un equipo como desarrollador, para así seguir formandome, seguir aprendiendo y lograr mejorar mis habilidades tecnicas.</p>
                     <p>Abajo está mi stack tecnológico, como también mis estudios, idiomas que manejo y mis hobbies. </p>
@@ -86,6 +88,7 @@ export const SobreMi = () =>{
                     </Row>
                 </section>
             </Container>
+            <Contacto/>
         </Container>
     )
 }

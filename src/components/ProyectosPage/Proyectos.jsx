@@ -6,7 +6,7 @@ import CardProyectos from "./CardProyectos";
 export const Proyectos = () =>{
     return(
         <>
-            <Container className="proyectos">
+            <Container id="proyectos" className="proyectos">
                 <Row>
                     <div className="col-sm col-12 mb-3 mt-4">
                         <h1>Mis proyectos</h1>
