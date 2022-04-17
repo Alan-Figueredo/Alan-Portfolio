@@ -22,8 +22,8 @@ export const SobreMi = () =>{
                         <a className="col-sm-4 col-10 mt-sm-0 mt-2 nav-link cv2 text-sm text-center " href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Descargar CV</a>
                     </Row>
                 </div>
-                <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6">
-                    <img className="img-fluid avatar shadow" src="images/Alan.jpg" alt="Alan Figueredo"/>
+                <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
+                    <img className="img-fluid avatar shadow " src="images/Alan.jpg" alt="Alan Figueredo"/>
                 </div>
             </Row>
             <hr/>
