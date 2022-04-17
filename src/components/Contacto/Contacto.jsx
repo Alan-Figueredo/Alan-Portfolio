@@ -40,15 +40,15 @@ export const Contacto = () =>{
                             <input type="text" name="name" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
                             <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control"/>
                             <textarea name="message" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control"/>
+                            <div id="alertaMensaje">
+                                <div className="alert alert-success text-center" hidden={alertaMensaje} role="alert">
+                                    ¡Se ha enviado el mensaje correctamente!
+                                </div>
+                            </div>
                             <div>
                                 <input  className="mb-3" type="submit" value="Enviar" id="enviar"/>
                             </div>
                         </form>
-                        <div id="alertaMensaje">
-                                <div className="alert alert-success" hidden={alertaMensaje} role="alert">
-                                    ¡Se ha enviado el mensaje correctamente!
-                                </div>
-                        </div>
                     </div>
                 </Row>               
             </Container>    
