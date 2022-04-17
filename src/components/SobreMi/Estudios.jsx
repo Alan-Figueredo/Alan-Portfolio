@@ -4,7 +4,7 @@ const Estudios = ()=>{
     return(
         Studies && Studies.map( study=>{
             return(
-                <div className="col-sm-6 col-12">
+                <div key={study.id} className="col-sm-6 col-12">
                     <div className="card shadow p-4 mb-3 mb-sm-5">
                         <Row>
                             <div className="col-sm-3 col-3">
