@@ -11,7 +11,6 @@ import { Proyectos } from "../ProyectosPage/Proyectos";
 export const SobreMi = () =>{
     return(
         <Container className="sobre-mi">
-            <Proyectos/>
             <Row className="my-4">
                 <div id="sobreMi" className="col-sm-6">
                     <h1 id="hsob">Sobre Mí</h1>
@@ -27,8 +26,10 @@ export const SobreMi = () =>{
                     <img className="img-fluid avatar shadow" src="images/Alan.jpg" alt="Alan Figueredo"/>
                 </div>
             </Row>
+            <Proyectos/>
+            
             <hr/>
-            <Container id="tecs" className="my-5">
+            <Container id="stackTech" className="my-5">
                 <Row className="my-5">
                     <div className="col">
                         <h2 id="htec">Stack Tecnológico</h2>

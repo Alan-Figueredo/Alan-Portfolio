@@ -26,6 +26,9 @@ export const NavBar = () =>{
                                     <a href="#proyectos" to="/proyectos" activeClassName="active" className=" nav-link  item" >Proyectos</a>
                                 </li> 
                                 <li className="nav-item">
+                                    <a href="#stackTech" to="/proyectos" activeClassName="active" className=" nav-link  item" >Stack Tecnolgico</a>
+                                </li> 
+                                <li className="nav-item">
                                     <a href="#contacto" to="/contacto" activeClassName="active" className=" nav-link  item" >Contacto</a>
                                 </li> 
                                 <li className="mt-1"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></li>
