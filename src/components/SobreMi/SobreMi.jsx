@@ -26,6 +26,7 @@ export const SobreMi = () =>{
                     <img className="img-fluid avatar shadow" src="images/Alan.jpg" alt="Alan Figueredo"/>
                 </div>
             </Row>
+            <hr/>
             <Proyectos/>
             
             <hr/>
