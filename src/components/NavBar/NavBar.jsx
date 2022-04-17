@@ -31,7 +31,9 @@ export const NavBar = () =>{
                                 <li className="nav-item">
                                     <a href="#contacto" to="/contacto" activeClassName="active" className=" nav-link  item" >Contacto</a>
                                 </li> 
-                                <li className="mt-1"><a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a></li>
+                                <li className="mt-1">
+                                    <a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
+                                </li>
                             </ul>
                         </div>
                     </Navbar>

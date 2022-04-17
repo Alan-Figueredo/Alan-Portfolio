@@ -18,9 +18,12 @@ const CardProyectos = ()=>{
                                 <p>{proyect.description}</p>
                             </Row>
                             <Row className="mb-5">
-                                <div className="col text-right mr-2">
+                                <div className=" col-6 text-right mr-2">
                                     <a href={proyect.code} target="_blank" rel="noopener noreferrer" className="btn">Código fuente</a>
-                                </div>                                                            
+                                </div>
+                                <div className="col-6 text-right">
+                                    <a href={proyect.onlineURL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a>
+                                </div>                                                         
                             </Row>
                         </div>
                     </div>

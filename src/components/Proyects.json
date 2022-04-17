@@ -18,6 +18,7 @@
         "caption": "PROYECTO INTEGRADOR",
         "img": "images/sistema-admin.png",
         "description": "Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos.",
+        "onlineURL": "https://emilcecharras.com.ar/",
         "code": "https://github.com/Alan-Figueredo/Alan-Portfolio"
     },
     {

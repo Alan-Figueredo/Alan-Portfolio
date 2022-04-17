@@ -12,7 +12,6 @@ export const Contacto = () =>{
 
     const sendEmail = (e) => {
       e.preventDefault();
-  
       emailjs.sendForm('gmail', 'template_qmxhiv3', e.target, '-1FLgxPUmudOciL-d')
         .then((result) => {
             console.log(result.text);
