@@ -33,7 +33,7 @@ export const Contacto = () =>{
                 <Row>
                     <div className="col-sm col-12">
                         <p>Cualquier consulta o duda sobre mis proyectos enviar un mensaje o bien un Whatsapp mediante el botón de la esquina inferior derecha, responderé a la brevedad.</p>
-                        <img className="img-fluid" src="images/avion.jfif"/>
+                        <img alt="avion" className="img-fluid" src="images/avion.jfif"/>
                     </div>
                     <div className="col-12 col-sm-6">
                         <form action="" method="POST" ref={form} onSubmit={sendEmail}>
