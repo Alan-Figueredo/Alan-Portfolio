@@ -3,7 +3,7 @@
     height: 30vh;
     width: 30vh;
     float: right;
-     margin-right: 10px;
+    margin-right: 10px;
 }
 .sobre-mi .card{
     border-radius: 20px ;
@@ -127,5 +127,11 @@
     .imgEstudios{
         height: auto;
         max-width: 100%;
+    }
+    .sobre-mi .avatar{
+        border-radius: 50%;
+        height: 30vh;
+        width: 30vh;
+        float: center;
     }
 }
