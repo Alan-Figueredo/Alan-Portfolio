@@ -43,12 +43,12 @@ export const Contacto = () =>{
                             <div>
                                 <input  className="mb-3" type="submit" value="Enviar" id="enviar"/>
                             </div>
-                            <div id="alertaMensaje">
+                        </form>
+                        <div id="alertaMensaje">
                                 <div className="alert alert-success" hidden={alertaMensaje} role="alert">
                                     ¡Se ha enviado el mensaje correctamente!
                                 </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </Row>               
             </Container>    
