@@ -8,6 +8,7 @@ import StackTecnologico from "../SobreMi/StackTecnologico";
 import Estudios from "../SobreMi/Estudios";
 import { Contacto } from "../Contacto/Contacto";
 import { Proyectos } from "../ProyectosPage/Proyectos";
+import ExperienciaLaboral from "../SobreMi/ExperienciaLaboral";
 export const SobreMi = () =>{
     return(
         <Container className="sobre-mi">
@@ -76,11 +77,22 @@ export const SobreMi = () =>{
             </Container>
             <hr/>
             <Container>
+                <section id="JobXp">
+                    <Row className="mb-4 ml-4">
+                        <div>
+                            <h2 className="mt-5">Experiencia Laboral</h2>
+                        </div>
+                    </Row>
+                    <Row>
+                        <ExperienciaLaboral/>
+                    </Row>
+                </section>
+                
+            </Container>
+            <hr/>
+            <Container>
                 <section id="est">
                     <Row className="mb-4 ml-4">
-                        <div className="col-sm-1 col-4 mt-4">
-                            <i className="fas fa-graduation-cap"></i>
-                        </div>
                         <div>
                             <h2 className="mt-5">Estudios</h2>
                         </div>

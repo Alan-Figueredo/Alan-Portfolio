@@ -29,6 +29,9 @@ export const NavBar = () =>{
                                     <a href="#stackTech" to="/proyectos" activeClassName="active" className=" nav-link  item" >Stack Tecnolgico</a>
                                 </li> 
                                 <li className="nav-item">
+                                    <a href="#JobXp" to="/proyectos" activeClassName="active" className=" nav-link  item" >Experiencia Laboral</a>
+                                </li> 
+                                <li className="nav-item">
                                     <a href="#contacto" to="/contacto" activeClassName="active" className=" nav-link  item" >Contacto</a>
                                 </li> 
                                 <li className="mt-1">

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "caption": "Analista Funcional",
+        "company" : "Prüne",
+        "img": "images/prune-logo.jpg",
+        "date": "Julio 2019-Septiembre 2021",
+        "tasks": "PROYECTO INTEGRADOR CON BASE DE DATOS",
+        "linkCompany": "https://www.prune.com.ar/"
+    },
+    {
+        "id": 2,
+        "caption": "Analista Funcional",
+        "company" : "Accenture",
+        "img": "images/accenture-logo.png",
+        "date": "Septiembre 2021-Actualidad",
+        "tasks": "PROYECTO INTEGRADOR CON BOOTSTRAP Y FIREBASE.",
+        "linkCompany": "https://www.accenture.com/ar-es"
+    }
+]
