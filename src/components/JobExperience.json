@@ -3,7 +3,7 @@
         "id": 1,
         "caption": "Analista Funcional",
         "company" : "Prüne",
-        "img": "images/prune-logo.jpg",
+        "img": "images/prune-logo.png",
         "date": "Julio 2019-Septiembre 2021",
         "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
         "linkCompany": "https://www.prune.com.ar/"
