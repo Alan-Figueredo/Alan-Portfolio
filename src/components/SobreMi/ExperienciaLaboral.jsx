@@ -16,7 +16,12 @@ const ExperienciaLaboral = ()=>{
                                     <h4>{job.date}</h4>
                                     <div>
                                         <ul>
-                                            <li><span className="spann">{job.tasks}</span></li>
+                                            {job.tasks && job.tasks.map( task=>{
+                                                return(
+                                                    <li><span className="spann">{task}</span></li>
+                                                )
+                                            })}
+
                                         </ul>
                                     </div>
                                 </div>

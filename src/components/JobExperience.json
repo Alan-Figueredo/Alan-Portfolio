@@ -5,7 +5,7 @@
         "company" : "Prüne",
         "img": "images/prune-logo.jpg",
         "date": "Julio 2019-Septiembre 2021",
-        "tasks": "PROYECTO INTEGRADOR CON BASE DE DATOS",
+        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
         "linkCompany": "https://www.prune.com.ar/"
     },
     {
@@ -14,7 +14,7 @@
         "company" : "Accenture",
         "img": "images/accenture-logo.png",
         "date": "Septiembre 2021-Actualidad",
-        "tasks": "PROYECTO INTEGRADOR CON BOOTSTRAP Y FIREBASE.",
+        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
         "linkCompany": "https://www.accenture.com/ar-es"
     }
 ]
