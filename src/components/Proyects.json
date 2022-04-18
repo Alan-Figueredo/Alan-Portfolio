@@ -8,31 +8,26 @@
     },
     {
         "id": 2,
-        "caption": "SISTEMA DE GESTIÓN DE VENTAS",
-        "img": "images/abmventas.png",
-        "description": "Sistema de gestión de clientes, productos y ventas. Realizado en HTML, CSS, PHP, Bootstrap, Js, Ajax, jQuery y MySQL.",
-        "code": "https://github.com/Alan-Figueredo/Alan-Portfolio"
+        "caption": "Tienda creada con JS",
+        "img": "images/Tienda-JS.png",
+        "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
+        "onlineURL":"https://simulador-compras-js.netlify.app/",
+        "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
     },
     {
         "id": 3,
+        "caption": "Tienda creada con REACT",
+        "img": "images/Tienda-react.png",
+        "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
+        "onlineURL":"https://tusbebidasonline.netlify.app/",
+        "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
+    },
+    {
+        "id": 4,
         "caption": "PROYECTO INTEGRADOR",
         "img": "images/sistema-admin.png",
         "description": "Proyecto Full Stack desarrollado en PHP, Laravel, Javascript, jQuery, AJAX, HTML, CSS, con panel administrador, gestor de usuarios, módulo de permisos.",
         "onlineURL": "https://emilcecharras.com.ar/",
         "code": "https://github.com/Alan-Figueredo/Alan-Portfolio"
-    },
-    {
-        "id": 4,
-        "caption": "Tienda creada con JS",
-        "img": "images/Tienda-JS.png",
-        "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
-        "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
-    },
-    {
-        "id": 5,
-        "caption": "Tienda creada con REACT",
-        "img": "images/Tienda-react.png",
-        "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
-        "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
     }
 ]
