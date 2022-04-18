@@ -31,6 +31,17 @@
     float: right;
     padding: 6px 42px 6px 42px;
 }
+.contacto #enviar:hover{
+    border-radius: 20px;
+    border-color:transparent;
+    border: 1px solid;
+    border-color: #370A6D;
+    background-color: white;
+    color: #370A6D;
+    margin-top: 5px;
+    float: right;
+    padding: 6px 42px 6px 42px;
+}
 .contacto{
     margin-bottom:25vh;
 }

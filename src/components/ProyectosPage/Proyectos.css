@@ -9,6 +9,15 @@
     padding: 8px 27px 8px 27px;
     font-size: 15px;
 }
+.btn:hover{
+    background-color: white;
+    border: 1px solid;
+    border-color: #370A6D;
+    border-radius: 20px;
+    color: #370A6D;
+    padding: 8px 27px 8px 27px;
+    font-size: 15px;
+}
 .proyectos #p1{
     color: #6A6A6A;
 }
