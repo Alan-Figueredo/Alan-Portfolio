@@ -2,6 +2,11 @@ import Proyects from "../Proyects.json"
 import { Row } from "react-bootstrap";
 
 const CardProyectos = ()=>{
+    const verOnline = (URL)=>{
+        if(URL !== ""){
+            return(<div className="col-6 text-right"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a></div>)
+        }
+    }
     return(
         Proyects && Proyects.map( proyect=>{
             return(
@@ -21,9 +26,7 @@ const CardProyectos = ()=>{
                                 <div className=" col-6 text-right mr-2">
                                     <a href={proyect.code} target="_blank" rel="noopener noreferrer" className="btn">Código fuente</a>
                                 </div>
-                                <div className="col-6 text-right">
-                                    <a href={proyect.onlineURL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a>
-                                </div>                                                         
+                                {verOnline(proyect.onlineURL)}                                                         
                             </Row>
                         </div>
                     </div>

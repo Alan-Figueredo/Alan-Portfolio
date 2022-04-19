@@ -4,6 +4,7 @@
         "caption": "ABM CLIENTES",
         "img": "images/abmclientes.png",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
+        "onlineURL":"",
         "code": "https://github.com/Alan-Figueredo/abmventas"
     },
     {
@@ -11,7 +12,7 @@
         "caption": "Tienda creada con JS",
         "img": "images/Tienda-JS.png",
         "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
-        "onlineURL":"https://simulador-compras-js.netlify.app/",
+        "onlineURL":"",
         "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
     },
     {
