@@ -11,7 +11,7 @@ import { Proyectos } from "../ProyectosPage/Proyectos";
 import ExperienciaLaboral from "../SobreMi/ExperienciaLaboral";
 export const SobreMi = () =>{
     return(
-        <Container className="sobre-mi">
+        <Container className="sobre-mi mt-sm mt-5">
             <Row className="my-4">
                 <div id="sobreMi" className="col-sm-6">
                     <h1 id="hsob">Sobre Mí</h1>

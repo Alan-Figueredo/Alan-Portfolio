@@ -6,6 +6,12 @@
     border: 1px solid ;
     border-radius: .25rem;
 }
+#navBar{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
 .li{
     color: #282828;
 }
@@ -48,6 +54,13 @@
 }
 
 @media screen and (max-width: 767px){
+    #navBar{
+        background-color: black;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height:fit-content;
+        z-index: 1;
+    }
     .nav-ul{
         display: none;
         flex-direction: column;

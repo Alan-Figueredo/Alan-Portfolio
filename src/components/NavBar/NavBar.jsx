@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const NavBar = () =>{
     return(
         <div className="bg-black py-3">
-            <Container>
+            <Container id="navBar">
                 <Row>
                     <Navbar className=" px-0">
                         <div >
