@@ -8,40 +8,36 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export const NavBar = () =>{
     return(
-        <div className="bg-black py-3">
-            <Container id="navBar">
-                <Row>
-                    <Navbar className=" px-0">
-                        <div >
-                            <button className="hamburger" id="hamburger" onClick={()=>{
-                                    document.getElementById("nav-ul").classList.toggle("show");
-                                }}>
-                                <FontAwesomeIcon icon={faBars}/>
-                            </button>
-                            <ul className="nav-bar nav nav-ul" id="nav-ul">
-                                <li className="nav-item ">
-                                    <a href="#sobreMi" to="/sobre-mi" activeClassName="active" className=" nav-link item" >Sobre mi</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#proyectos" to="/proyectos" activeClassName="active" className=" nav-link  item" >Proyectos</a>
-                                </li> 
-                                <li className="nav-item">
-                                    <a href="#stackTech" to="/proyectos" activeClassName="active" className=" nav-link  item" >Stack Tecnolgico</a>
-                                </li> 
-                                <li className="nav-item">
-                                    <a href="#JobXp" to="/proyectos" activeClassName="active" className=" nav-link  item" >Experiencia Laboral</a>
-                                </li> 
-                                <li className="nav-item">
-                                    <a href="#contacto" to="/contacto" activeClassName="active" className=" nav-link  item" >Contacto</a>
-                                </li> 
-                                <li className="mt-1">
-                                    <a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </Navbar>
-                </Row>
+        <Navbar className="px-0" id="navBar" >
+            <Container >
+                <div>
+                    <button className="hamburger" id="hamburger" onClick={()=>{
+                            document.getElementById("nav-ul").classList.toggle("show");
+                        }}>
+                        <FontAwesomeIcon icon={faBars}/>
+                    </button>
+                    <ul id="nav-ul">
+                        <li>
+                            <a href="#sobreMi" to="/sobre-mi" activeClassName="active" className=" nav-link item" >Sobre mi</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos" to="/proyectos" activeClassName="active" className=" nav-link  item" >Proyectos</a>
+                        </li> 
+                        <li>
+                            <a href="#stackTech" to="/proyectos" activeClassName="active" className=" nav-link  item" >Stack Tecnolgico</a>
+                        </li> 
+                        <li>
+                            <a href="#JobXp" to="/proyectos" activeClassName="active" className=" nav-link  item" >Experiencia Laboral</a>
+                        </li> 
+                        <li>
+                            <a href="#contacto" to="/contacto" activeClassName="active" className=" nav-link  item" >Contacto</a>
+                        </li> 
+                        <li className="mt-1 mb-3">
+                            <a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
+                        </li>
+                    </ul>
+                </div>
             </Container>
-        </div>
+        </Navbar>
     )
 }

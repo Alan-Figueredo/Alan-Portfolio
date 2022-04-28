@@ -11,9 +11,11 @@
     position: fixed;
     width: 100%;
     top: 0%;
-}
-.li{
-    color: #282828;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height:fit-content;
+    z-index: 1;
+    background-color: black;
 }
 .li:hover{
     color: #282828;
@@ -47,8 +49,24 @@
 .hamburger:focus{
     outline: none;
 }
-
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 .nav-link{
     margin-inline-end: 60px;
 }
@@ -61,18 +79,23 @@
         height:fit-content;
         z-index: 1;
     }
-    .nav-ul{
+    #nav-ul{
         display: none;
         flex-direction: column;
         width: 100%;
         text-align:justify;
     }
-    .nav-ul.show{
+    li a{
+        text-align: left;
+    }
+    #nav-ul.show{
         display: flex;
     }
     .hamburger{
         display: block;
         margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     #cv{
         float: left;
