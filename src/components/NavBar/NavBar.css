@@ -70,6 +70,11 @@ li a {
 .nav-link{
     margin-inline-end: 60px;
 }
+.myStyle{
+    position: relative;
+    transition: 1s all ease;
+    background-color: black;
+}
 
 @media screen and (max-width: 767px){
     #navBar{
