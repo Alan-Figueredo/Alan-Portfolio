@@ -47,7 +47,7 @@
     font-size: 20px;
 }
 .hamburger:focus{
-    outline: none;
+    outline: none; 
 }
 ul {
     list-style-type: none;
