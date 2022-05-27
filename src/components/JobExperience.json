@@ -16,5 +16,14 @@
         "date": "Septiembre 2021-Actualidad",
         "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
         "linkCompany": "https://www.accenture.com/ar-es"
+    },
+    {
+        "id": 3,
+        "caption": "React Developer",
+        "company" : "BOTS Logistics",
+        "img": "images/BOTS.jfif",
+        "date": "Mayo-Actualidad",
+        "tasks": ["Desarrollo de proyectos con React", "Versionado con GIT", "Estilado con Bootstrap"],
+        "linkCompany": "https://www.botslogistics.com/"
     }
 ]

@@ -8,18 +8,29 @@ import emailjs from 'emailjs-com';
 
 export const Contacto = () =>{
     const [alertaMensaje, setAlertaMensaje] = useState(true);
+    const [alertaMensajeError, setAlertaMensajeError] = useState(true);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+
     const form = useRef();
 
     const sendEmail = (e) => {
       e.preventDefault();
-      emailjs.sendForm('gmail', 'template_qmxhiv3', e.target, '-1FLgxPUmudOciL-d')
+      if(!name || !email){
+        setAlertaMensajeError(false);
+      }
+      else{
+        emailjs.sendForm('gmail', 'template_qmxhiv3', e.target, '-1FLgxPUmudOciL-d')
         .then((result) => {
             console.log(result.text);
             setAlertaMensaje(false);
+            setAlertaMensajeError(true)
         }, (error) => {
             console.log(error.text);
         });
         e.target.reset();
+      }
+      
     };
     return(
         <>
@@ -36,12 +47,15 @@ export const Contacto = () =>{
                     </div>
                     <div className="col-12 col-sm-6">
                         <form action="" method="POST" ref={form} onSubmit={sendEmail}>
-                            <input type="text" name="name" id="nombre" placeholder="Nombre" className="shadow form-control"/><br/>
-                            <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control"/>
+                            <input type="text" name="name" id="nombre" placeholder="Nombre" className="shadow form-control" onChange={(e)=>{setName(e.target.value)}} /><br/>
+                            <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control" onChange={(e)=>{setEmail(e.target.value)}} />
                             <textarea name="message" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control"/>
                             <div id="alertaMensaje">
                                 <div className="alert alert-success text-center" hidden={alertaMensaje} role="alert">
                                     ¡Se ha enviado el mensaje correctamente!
+                                </div>
+                                <div className="alert alert-danger text-center" hidden={alertaMensajeError} role="alert">
+                                    ¡Faltan completar datos!
                                 </div>
                             </div>
                             <div>

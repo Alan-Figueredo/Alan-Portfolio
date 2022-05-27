@@ -14,11 +14,12 @@ const ExperienciaLaboral = ()=>{
                                     <h3>{job.caption}</h3>
                                     <h3>{job.company}</h3>
                                     <h4>{job.date}</h4>
+                                    <br />
                                     <div>
                                         <ul>
                                             {job.tasks && job.tasks.map( task=>{
                                                 return(
-                                                    <li><span className="spann">{task}</span></li>
+                                                    <><p className="spann">{task}</p></>
                                                 )
                                             })}
 
