@@ -22,8 +22,17 @@
         "caption": "React Developer",
         "company" : "BOTS Logistics",
         "img": "images/BOTS.jfif",
-        "date": "Mayo-Actualidad",
-        "tasks": ["Desarrollo de proyectos con React", "Versionado con GIT", "Estilado con Bootstrap"],
+        "date": "Dec 2021-AUG 2022",
+        "tasks": ["Desarrollo de proyectos con React", "Versionado con Bitbucket", "Estilado con Bootstrap"],
         "linkCompany": "https://www.botslogistics.com/"
+    },
+    {
+        "id": 4,
+        "caption": "React Developer",
+        "company" : "Peluquería de la Cruz",
+        "img": "images/LOGO_DE_LA_CRUZ.jpg",
+        "date": "AUG 2022-Actualidad",
+        "tasks": ["Desarrollo de página para una peluquería desde cero con React", "Versionado con GIT", "Estilado con Bootstrap"],
+        "linkCompany": "https://delacruzpeluqueria.netlify.app/"
     }
 ]

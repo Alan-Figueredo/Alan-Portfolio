@@ -34,5 +34,29 @@
         "date": "Julio 2021-Septiembre 2021",
         "proyects": "PROYECTO INTEGRADOR GRUPAL CON JIRA.",
         "linkCompany": "https://www.educacionit.com/"
+    },
+    {
+        "id": 5,
+        "caption": "Curso Typescript",
+        "company" : "Código Facilito",
+        "img": "images/CodigoFacilitoLogo.png",
+        "date": "Nov 2022-Nov 2022",
+        "linkCompany": "https://www.codigofacilito.com/"
+    },
+    {
+        "id": 6,
+        "caption": "Curso Consumo de APIs con AXIOS",
+        "company" : "Código Facilito",
+        "img": "images/CodigoFacilitoLogo.png",
+        "date": "Nov 2022-Nov 2022",
+        "linkCompany": "https://www.codigofacilito.com/"
+    },
+    {
+        "id": 7,
+        "caption": "Curso Redux desde Cero",
+        "company" : "Código Facilito",
+        "img": "images/CodigoFacilitoLogo.png",
+        "date": "Dec 2022-Ene 2023",
+        "linkCompany": "https://www.codigofacilito.com/"
     }
 ]

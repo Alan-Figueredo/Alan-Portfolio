@@ -4,7 +4,7 @@ import { Row } from "react-bootstrap";
 const CardProyectos = ()=>{
     const verOnline = (URL)=>{
         if(URL !== ""){
-            return(<div className="col-6 text-right"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a></div>)
+            return(<div className="col-6 float-right"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a></div>)
         }
     }
     return(
