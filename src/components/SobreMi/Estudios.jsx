@@ -22,7 +22,7 @@ const Estudios = ()=>{
                             </div>
                         </Row>
                         <Row>
-                            <div>
+                            <div className="mt-3">
                                 <a className="ml-3 verEmpresa" target="_blank" rel="noopener noreferrer" href={study.linkCompany}>VER EMPRESA</a>
                             </div>
                         </Row>

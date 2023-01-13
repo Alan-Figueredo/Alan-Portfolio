@@ -30,21 +30,6 @@
         "icon": "images/boot.png"
     },
     {
-        "id": 7,
-        "caption": "Word",
-        "icon": "images/word.png"
-    },
-    {
-        "id": 8,
-        "caption": "Excel",
-        "icon": "images/excel.png"
-    },
-    {
-        "id": 9,
-        "caption": "Photoshop",
-        "icon": "images/photo1.png"
-    },
-    {
         "id": 10,
         "caption": "CSS",
         "icon": "images/css.png"
@@ -55,8 +40,38 @@
         "icon": "images/php.png"
     },
     {
-        "id": 12,
-        "caption": "SQL",
-        "icon": "images/sql.jfif"
+        "id": 13,
+        "caption": "AXIOS",
+        "icon": "images/Axios-Logo.png"
+    },
+    {
+        "id": 14,
+        "caption": "REDUX",
+        "icon": "images/Redux.jpeg"
+    },
+    {
+        "id": 15,
+        "caption": "Typescript",
+        "icon": "images/Typescript.jpeg"
+    },
+    {
+        "id": 16,
+        "caption": "Node.JS",
+        "icon": "images/Node.jpeg"
+    },
+    {
+        "id": 17,
+        "caption": "Express",
+        "icon": "images/Express.jpeg"
+    },
+    {
+        "id": 18,
+        "caption": "MySQL",
+        "icon": "images/MySql.jpeg"
+    },
+    {
+        "id": 19,
+        "caption": "MongoDB",
+        "icon": "images/MongoDB.jpeg"
     }
 ]

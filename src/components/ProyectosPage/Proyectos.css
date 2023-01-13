@@ -1,7 +1,8 @@
-.proyectos main{
+.proyectos main {
     margin-top: 3%;
 }
-.btn{
+
+.btn {
     background-color: #370A6D;
     color: white;
     border-radius: 20px;
@@ -9,7 +10,8 @@
     padding: 8px 27px 8px 27px;
     font-size: 15px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: white;
     border: 1px solid;
     border-color: #370A6D;
@@ -18,35 +20,64 @@
     padding: 8px 27px 8px 27px;
     font-size: 15px;
 }
-.proyectos #p1{
+
+.proyectos #p1 {
     color: #6A6A6A;
 }
-.proyectos h2{
+
+.proyectos h2 {
     color: white;
     font-size: 15px;
 }
-#cf{
+
+#cf {
     color: #370A6D;
     font-size: 14px;
     text-decoration: none;
 }
-.proyectos .card{
+
+.proyectos .card {
     border-radius: 18px;
     height: 470px;
 }
-.proyectos img{
+
+.proyectos img {
     padding: 15px;
 }
-.proyectos .sv{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,10,109,1) 19%, rgba(55,10,109,1) 81%, rgba(2,0,36,1) 100%);
+
+.proyectos .sv {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(55, 10, 109, 1) 19%, rgba(55, 10, 109, 1) 81%, rgba(2, 0, 36, 1) 100%);
     padding: 7px 0px 7px 0px;
     margin-left: -16px;
     margin-right: -16px;
 }
-#rrr{
+
+#rrr {
     margin-top: -22px;
 }
-.proyectos{
+
+.proyectos {
     margin-bottom: 15vh;
+}
+
+@media screen and (max-width: 1400px) {
+    .btn {
+        background-color: #370A6D;
+        color: white;
+        border-radius: 20px;
+        border: transparent;
+        padding: 8px 27px 8px 27px;
+        font-size: 13px;
+    }
+
+    .btn:hover {
+        background-color: white;
+        border: 1px solid;
+        border-color: #370A6D;
+        border-radius: 20px;
+        color: #370A6D;
+        padding: 8px 27px 8px 27px;
+        font-size: 13px;
+    }
 }
