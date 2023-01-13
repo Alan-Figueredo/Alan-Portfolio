@@ -18,7 +18,7 @@ export const SobreMi = () => {
             <Row className="mt-4">
                 <div id="sobreMi" className="col-sm-6">
                     <h1 id="hsob">Sobre Mí</h1>
-                    <p>Mi nombre es Alan Figueredo y soy Desarrollador Web Front end. Soy un joven con más de 2 años como desarrollador para empresas. Especialista en resolver problemas y realizar trabajo en equipo</p>
+                    <p>Mi nombre es Alan Figueredo y soy Desarrollador Web FullStack. Soy un joven con más de 2 años como desarrollador para empresas. Especialista en resolver problemas y realizar trabajo en equipo</p>
                     <p>Abajo está mi stack tecnológico, como también mis estudios, idiomas que manejo y mis hobbies. </p>
                     <Row className="my-5">
                         <a className="col-sm-1 col-6 text-sm text-center" href="https://github.com/Alan-Figueredo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="fab fa-github" /></a>

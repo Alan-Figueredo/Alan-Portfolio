@@ -5,7 +5,7 @@
         "img": "images/ProyectoDeLaCruz.png",
         "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
         "onlineURL":"https://delacruzpeluqueria.netlify.app/",
-        "code": "https://github.com/Alan-Figueredo/abmventas"
+        "code": ""
     },
     {
         "id": 2,
