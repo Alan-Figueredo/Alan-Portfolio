@@ -7,22 +7,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 export const NavBar = () =>{
-    let ubicacionPrincipal = window.pageYOffset;
-    window.onscroll = function(){
-        let Desplazamiento_Actual = window.pageYOffset;
-        if(ubicacionPrincipal >= Desplazamiento_Actual){
-            document.getElementById('navBar').classList = 'py-3 myStyle';
-            document.getElementById('navBar').style.top = '0';
-        }else{
-            document.getElementById('navBar').classList = 'py-3 myStyle';
-            document.getElementById('navBar').style.top = '-100px';
+        let ubicacionPrincipal = window.pageYOffset;
+        window.onscroll = function(){
+            let Desplazamiento_Actual = window.pageYOffset;
+            if(ubicacionPrincipal >= Desplazamiento_Actual){
+                document.getElementById('navBar').classList = 'py-3 myStyle';
+                document.getElementById('navBar').style.top = '0';
+            }else{
+                document.getElementById('navBar').classList = 'py-3 myStyle';
+                document.getElementById('navBar').style.top = '-100px';
+            }
+            ubicacionPrincipal = Desplazamiento_Actual;
         }
-        ubicacionPrincipal = Desplazamiento_Actual;
-    }
-    function clickearCerrar(){
-        document.getElementById("nav-ul").classList.toggle("show")
-        document.getElementById("nav-ul").classList.remove("d-none");
-    }
+        function clickearCerrar(){
+            document.getElementById("nav-ul").classList.toggle("show")
+            document.getElementById("nav-ul").classList.remove("d-none");
+        }
     return(
         <Navbar className="px-0" id="navBar" >
             <Container >
@@ -50,7 +50,7 @@ export const NavBar = () =>{
                             <a href="#contacto" to="/contacto" activeClassName="active" className=" nav-link  item" onClick={clickearCerrar}>Contacto</a>
                         </li> 
                         <li className="mt-1 mb-3">
-                            <a href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
+                            <a href="https://drive.google.com/file/d/1JuWIdR8TIyavHMJr2diXr3NDP-xm5Xk0/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
                         </li>
                     </ul>
                 </div>

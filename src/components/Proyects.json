@@ -1,35 +1,42 @@
 [
     {
         "id": 1,
-        "caption": "De la Cruz Peluquría",
-        "img": "images/ProyectoDeLaCruz.png",
-        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
-        "onlineURL":"https://delacruzpeluqueria.netlify.app/",
+        "caption": "Coffix Web Desing",
+        "img": "images/coffix.png",
+        "description": "Página personal donde presento mis servicios como desarrollador freelance",
+        "onlineURL": "https://coffix-web.com",
         "code": ""
     },
     {
         "id": 2,
-        "caption": "Tienda creada con REACT",
-        "img": "images/Tienda-react.png",
-        "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
-        "onlineURL":"https://tusbebidasonline.netlify.app/",
-        "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
+        "caption": "De la Cruz Peluquría",
+        "img": "images/ProyectoDeLaCruz.png",
+        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
+        "onlineURL": "https://delacruzpeluqueria.netlify.app/",
+        "code": ""
     },
     {
         "id": 3,
-        "caption": "Tienda creada con JS",
-        "img": "images/Tienda-JS.png",
-        "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
-        "onlineURL":"",
-        "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
+        "caption": "Tienda creada con REACT",
+        "img": "images/Tienda-react.png",
+        "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
+        "onlineURL": "https://tusbebidasonline.netlify.app/",
+        "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
     },
     {
         "id": 4,
+        "caption": "Tienda creada con JS",
+        "img": "images/Tienda-JS.png",
+        "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
+        "onlineURL": "",
+        "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
+    },
+    {
+        "id": 5,
         "caption": "ABM CLIENTES",
         "img": "images/abmclientes.png",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
-        "onlineURL":"",
+        "onlineURL": "",
         "code": "https://github.com/Alan-Figueredo/abmventas"
     }
-
 ]

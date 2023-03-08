@@ -23,7 +23,7 @@ export const SobreMi = () => {
                     <Row className="my-5">
                         <a className="col-sm-1 col-6 text-sm text-center" href="https://github.com/Alan-Figueredo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="fab fa-github" /></a>
                         <a className="col-sm-4 col-6 text-sm text-center" href="https://www.linkedin.com/in/alan-figueredo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in" /></a>
-                        <a className="col-sm-4 col-10 mt-sm-0 mt-2 nav-link cv2 text-sm text-center " href="https://drive.google.com/file/d/1xIfuSJzIMA7nmLj56PiUvRV77LbK0LjI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+                        <a className="col-sm-4 col-10 mt-sm-0 mt-2 nav-link cv2 text-sm text-center " href="https://drive.google.com/file/d/1JuWIdR8TIyavHMJr2diXr3NDP-xm5Xk0/view?usp=sharing" target="_blank" rel="noopener noreferrer">Descargar CV</a>
                     </Row>
                 </div>
                 <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 text-center">
