@@ -2,7 +2,7 @@ import { Navbar } from "react-bootstrap"
 import { Container } from "react-bootstrap"
 import "./NavBar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
