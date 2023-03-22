@@ -1,38 +1,38 @@
 [
     {
         "id": 1,
-        "caption": "Analista Funcional",
-        "company" : "Prüne",
-        "img": "images/prune-logo.png",
-        "date": "Julio 2019-Septiembre 2021",
-        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
-        "linkCompany": "https://www.prune.com.ar/"
-    },
-    {
-        "id": 2,
-        "caption": "Analista Funcional",
-        "company" : "Accenture",
-        "img": "images/accenture-logo.png",
-        "date": "Septiembre 2021-Actualidad",
-        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
-        "linkCompany": "https://www.accenture.com/ar-es"
-    },
-    {
-        "id": 3,
         "caption": "React Developer",
         "company" : "BOTS Logistics",
         "img": "images/BOTS.jfif",
-        "date": "Dec 2021-AUG 2022",
+        "date": "Apr 2022-Feb 2023",
         "tasks": ["Desarrollo de proyectos con React", "Versionado con Bitbucket", "Estilado con Bootstrap"],
         "linkCompany": "https://www.botslogistics.com/"
     },
     {
-        "id": 4,
+        "id": 2,
         "caption": "React Developer",
         "company" : "Peluquería de la Cruz",
         "img": "images/LOGO_DE_LA_CRUZ.jpg",
-        "date": "AUG 2022-Actualidad",
+        "date": "Dec 2021-Mar 2022",
         "tasks": ["Desarrollo de página para una peluquería desde cero con React", "Versionado con GIT", "Estilado con Bootstrap"],
         "linkCompany": "https://delacruzpeluqueria.netlify.app/"
+    },
+    {
+        "id": 3,
+        "caption": "Analista Funcional",
+        "company" : "Accenture",
+        "img": "images/accenture-logo.png",
+        "date": "Mar 2021-Nov 2021",
+        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
+        "linkCompany": "https://www.accenture.com/ar-es"
+    },
+    {
+        "id": 4,
+        "caption": "Analista Funcional",
+        "company" : "Prüne",
+        "img": "images/prune-logo.png",
+        "date": "Jul 2019-Sep 2021",
+        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
+        "linkCompany": "https://www.prune.com.ar/"
     }
 ]

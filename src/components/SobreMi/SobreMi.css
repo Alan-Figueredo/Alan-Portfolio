@@ -1,30 +1,38 @@
-.sobre-mi .avatar{
+.sobre-mi .avatar {
     border-radius: 50%;
-    height: 30vh;
-    width: 30vh;
+    height: 35vh;
+    width: 35vh;
 }
-.sobre-mi .card{
-    border-radius: 20px ;
+
+.sobre-mi .card {
+    border-radius: 20px;
 }
-.sobre-mi .tec{
+
+.sobre-mi .tec {
     font-size: 17px;
 }
-.sobre-mi .fa-graduation-cap{
+
+.sobre-mi .fa-graduation-cap {
     font-size: 56px;
 }
-.sobre-mi .fa-briefcase{
+
+.sobre-mi .fa-briefcase {
     font-size: 56px;
 }
-.sobre-mi .fa-comment-alt{
+
+.sobre-mi .fa-comment-alt {
     font-size: 50px;
 }
-.sobre-mi .fa-star{
+
+.sobre-mi .fa-star {
     font-size: 50px;
 }
-.sobre-mi #coder{
+
+.sobre-mi #coder {
     height: 9vh;
 }
-.sobre-mi #footer .fa-linkedin-in{
+
+.sobre-mi #footer .fa-linkedin-in {
     font-size: 25px;
     color: white;
     border-radius: 21px;
@@ -32,7 +40,8 @@
     background-color: black;
     margin-top: 1px;
 }
-.sobre-mi .fa-linkedin-in{
+
+.sobre-mi .fa-linkedin-in {
     font-size: 25px;
     color: white;
     border-radius: 21px;
@@ -40,7 +49,8 @@
     background-color: #370A6D;
     margin-top: 1px;
 }
-.sobre-mi .fa-linkedin-in:hover{
+
+.sobre-mi .fa-linkedin-in:hover {
     font-size: 25px;
     color: #370A6D;
     border-radius: 21px;
@@ -50,12 +60,14 @@
     border-color: #370A6D;
     margin-top: 1px;
 }
-.sobre-mi .fa-github{
+
+.sobre-mi .fa-github {
     color: #370A6D;
     font-size: 35px;
     margin-top: 1px;
 }
-.sobre-mi .fa-github:hover{
+
+.sobre-mi .fa-github:hover {
     background-color: #370A6D;
     color: white;
     border-radius: 20px;
@@ -65,20 +77,23 @@
     border-color: #370A6D;
 }
 
-.sobre-mi #footer #mail{
+.sobre-mi #footer #mail {
     color: #370A6D;
 }
-.sobre-mi #footer #depc{
+
+.sobre-mi #footer #depc {
     color: #370A6D;
 }
-.sobre-mi .cv2{
+
+.sobre-mi .cv2 {
     color: white;
     background-color: #370A6D;
     border-radius: 25px;
     padding: 8px 27px 8px 27px;
     margin-left: 40px;
 }
-.sobre-mi .cv2:hover{
+
+.sobre-mi .cv2:hover {
     background-color: white;
     border: 1px solid;
     border-color: #370A6D;
@@ -87,26 +102,32 @@
     padding: 8px 27px 8px 27px;
     margin-left: 40px;
 }
-.sobre-mi .fa-star{
+
+.sobre-mi .fa-star {
     color: white;
 }
-.sobre-mi .fa-comment-alt{
+
+.sobre-mi .fa-comment-alt {
     color: white;
 }
-.sobre-mi .fa-graduation-cap{
+
+.sobre-mi .fa-graduation-cap {
     color: black;
 }
-.sobre-mi .fa-briefcase{
+
+.sobre-mi .fa-briefcase {
     color: #370A6D;
 }
-.sobre-mi #cardd{
+
+.sobre-mi #cardd {
     background-color: #370A6D;
     border-radius: 25px;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.sobre-mi .verEmpresa{
+
+.sobre-mi .verEmpresa {
     background-color: #370A6D;
     text-decoration: none;
     color: white;
@@ -115,7 +136,8 @@
     padding: 6px 16px 6px 16px;
     font-size: 13px;
 }
-.sobre-mi .verEmpresa:hover{
+
+.sobre-mi .verEmpresa:hover {
     background-color: white;
     text-decoration: none;
     border: 1px solid;
@@ -126,43 +148,68 @@
     padding: 6px 16px 6px 16px;
     font-size: 13px;
 }
-.sobre-mi #tecolor{
+
+.sobre-mi #tecolor {
     background-color: #370A6D;
 }
-.spann{
+
+.spann {
     font-size: 11px;
 }
-.sobre-mi h4{
+
+.sobre-mi h4 {
     font-size: 12px;
 }
-.sobre-mi h3{
-    font-size:18px;
+
+.sobre-mi h3 {
+    font-size: 18px;
 }
-.sobre-mi h2{
+
+.sobre-mi h2 {
     font-size: 24px;
 }
-.sobre-mi h1{
+
+.sobre-mi h1 {
     font-size: 35px;
 }
-.cards{
+
+.cards {
     border-radius: 20px 20px 0px 0px;
     max-width: 100%;
     height: 19vh;
-    padding: 5px;
+    padding: 15px;
 }
 
-.imgEstudios{
+.imgEstudios {
     height: auto;
     max-width: 70%;
     border-radius: 50%;
 }
-#containerSobreMi{
+
+#containerSobreMi {
     margin-top: 90px;
 }
 
-@media screen and (max-width: 767px){
-    .imgEstudios{
+@media screen and (min-width: 1100px) {
+    .sobre-mi .avatar {
+        border-radius: 50%;
+        height: 40vh;
+        width: 40vh;
+        float: right;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .imgEstudios {
         height: auto;
         max-width: 100%;
+    }
+    .sobre-mi .avatar {
+        border-radius: 50%;
+        height: 35vh;
+        width: 35vh;
+        margin: auto;
+        align-self: center;
     }
 }

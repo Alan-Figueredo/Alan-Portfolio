@@ -48,9 +48,6 @@ export const NavBar = () =>{
                         </li> 
                         <li>
                             <a href="#contacto" to="/contacto" activeClassName="active" className=" nav-link  item" onClick={clickearCerrar}>Contacto</a>
-                        </li> 
-                        <li className="mt-1 mb-3">
-                            <a href="https://drive.google.com/file/d/1JuWIdR8TIyavHMJr2diXr3NDP-xm5Xk0/view?usp=sharing" target="_blank" rel="noopener noreferrer" id="cv">Descargá mi cv <FontAwesomeIcon icon={faDownload}/></a>
                         </li>
                     </ul>
                 </div>

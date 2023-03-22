@@ -107,6 +107,38 @@ li a {
         margin-left: 10px;
     }
 }
+
+@media screen and (max-width: 994px){
+    #navBar{
+        background-color: black;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height:fit-content;
+        z-index: 1;
+    }
+    #nav-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align:justify;
+    }
+    li a{
+        text-align: left;
+    }
+    #nav-ul.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #cv{
+        float: left;
+        margin-left: 10px;
+    }
+}
 @media screen and (max-width: 1380px){
     #cv{
         float: left;
