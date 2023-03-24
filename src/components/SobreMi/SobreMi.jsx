@@ -9,28 +9,29 @@ import Estudios from "../SobreMi/Estudios";
 import { Contacto } from "../Contacto/Contacto";
 import { Proyectos } from "../ProyectosPage/Proyectos";
 import ExperienciaLaboral from "../SobreMi/ExperienciaLaboral";
+import { SobreMiDetail } from "./SobreMiDetail";
 export const SobreMi = () => {
     return (
         <Container className="sobre-mi" id="containerSobreMi">
             <Row className="mt-1">
 
             </Row>
-            <Row className="mt-4">
-                <div id="sobreMi" className="col-sm-6 col-md-6 col-12">
-                    <h1 id="hsob">Sobre Mí</h1>
-                    <p>Mi nombre es Alan Figueredo y soy Desarrollador Web FullStack. Cuento con más de 2 años como desarrollador para empresas. Especialista en resolver problemas y realizar trabajo en equipo</p>
-                    <p>Abajo está mi stack tecnológico, como también mis estudios, idiomas que manejo y mis hobbies. </p>
-                    <Row className="my-5 justify-content-center">
-                        <a className="col-sm-1 col-6 text-sm text-center" href="https://github.com/Alan-Figueredo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="fab fa-github" /></a>
-                        <a className="col-sm-4 col-6 text-sm text-center" href="https://www.linkedin.com/in/alan-figueredo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in" /></a>
-                        <a className="col-sm-4 col-10 mt-sm-0 mt-2 nav-link cv2 text-sm text-center " href="https://drive.google.com/file/d/1fadJgAv0BKz1vYJQmRRnyK3Qlt_-udde/view?usp=share_link" target="_blank" rel="noopener noreferrer">Descargar CV</a>
-                    </Row>
-                </div>
-                <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6">
-                    <img className="img-fluid avatar shadow" src="images/Alan.jpg" alt="Alan Figueredo" />
-                </div>
-            </Row>
+            <SobreMiDetail />
             <hr />
+            <Container>
+                <section id="JobXp">
+                    <Row className="mb-4 ml-4">
+                        <div>
+                            <h2 className="mt-5">Experiencia Laboral</h2>
+                        </div>
+                    </Row>
+                    <Row>
+                        <ExperienciaLaboral />
+                    </Row>
+                </section>
+
+            </Container>
+            <hr/>
             <Proyectos />
 
             <hr />
@@ -82,20 +83,6 @@ export const SobreMi = () => {
                         </div>
                     </div>
                 </div>
-            </Container>
-            <hr />
-            <Container>
-                <section id="JobXp">
-                    <Row className="mb-4 ml-4">
-                        <div>
-                            <h2 className="mt-5">Experiencia Laboral</h2>
-                        </div>
-                    </Row>
-                    <Row>
-                        <ExperienciaLaboral />
-                    </Row>
-                </section>
-
             </Container>
             <hr />
             <Container>
