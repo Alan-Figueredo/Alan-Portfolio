@@ -50,6 +50,10 @@
     margin-top: 1px;
 }
 
+.sobre-mi .sobreMiDetail a:hover{
+    transform: scale(1.10);
+    transition: 600ms;
+}
 .sobre-mi .fa-linkedin-in:hover {
     font-size: 25px;
     color: #370A6D;

@@ -6,9 +6,9 @@ import { Footer } from './components/Footer/Footer';
 function App() {
   return (
     <>
-      <NavBar/>
-        <SobreMi/>
-        <Footer/>
+      <NavBar />
+      <SobreMi />
+      <Footer />
     </>
   );
 }

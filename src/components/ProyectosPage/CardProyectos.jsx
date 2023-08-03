@@ -4,12 +4,12 @@ import { Row } from "react-bootstrap";
 const CardProyectos = () => {
     const verOnline = (URL) => {
         if (URL !== "") {
-            return (<div className="col-6 float-right"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a></div>)
+            return (<div className="col-6 float-right linksProyectos"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a></div>)
         }
     }
     const codigoFuente = (URL) => {
         if (URL !== "") {
-            return (<div className=" col-6 text-right mr-2"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Código fuente</a></div>)
+            return (<div className=" col-6 text-right mr-2 linksProyectos"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Código fuente</a></div>)
         }
     }
     return (
@@ -24,7 +24,7 @@ const CardProyectos = () => {
                             <Row className="sv">
                                 <h2 className="my-2 text-center">{proyect.caption}</h2>
                             </Row>
-                            <Row className="mx-1 my-3">
+                            <Row className="mx-1 my-3" style={{minHeight:"6rem"}}>
                                 <p>{proyect.description}</p>
                             </Row>
                             <Row className="mb-5">

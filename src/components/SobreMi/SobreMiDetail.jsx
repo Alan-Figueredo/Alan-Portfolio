@@ -4,7 +4,7 @@ import { Row } from "react-bootstrap"
 
 export const SobreMiDetail = () => {
     return (
-        <Row className="mt-4">
+        <Row className="mt-4 sobreMiDetail">
             <div id="sobreMi" className="col-sm-6 col-md-6 col-12">
                 <h1 id="hsob">Sobre Mí</h1>
                 <p>Mi nombre es Alan Figueredo y soy Desarrollador Web FullStack. Cuento con más de 2 años como desarrollador para empresas. Especialista en resolver problemas y realizar trabajo en equipo</p>
@@ -15,8 +15,8 @@ export const SobreMiDetail = () => {
                     <a className="col-sm-4 col-10 mt-sm-0 mt-2 nav-link cv2 text-sm text-center " href="https://drive.google.com/file/d/1fadJgAv0BKz1vYJQmRRnyK3Qlt_-udde/view?usp=share_link" target="_blank" rel="noopener noreferrer">Descargar CV</a>
                 </Row>
             </div>
-            <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6">
-                <img className="img-fluid avatar shadow" src="images/Alan.jpg" alt="Alan Figueredo" />
+            <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 d-flex">
+                <img className="img-fluid avatar shadow m-auto" src="images/Alan.jpg" alt="Alan Figueredo" />
             </div>
         </Row>
     )

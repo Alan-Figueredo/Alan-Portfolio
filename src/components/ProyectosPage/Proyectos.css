@@ -38,7 +38,7 @@
 
 .proyectos .card {
     border-radius: 18px;
-    height: 470px;
+    height: 480px;
 }
 
 .proyectos img {
@@ -61,7 +61,10 @@
     margin-bottom: 15vh;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 800px) {
+    .linksProyectos{
+        font-size: 10px
+    }
     .btn {
         background-color: #370A6D;
         color: white;
