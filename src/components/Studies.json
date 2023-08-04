@@ -2,7 +2,7 @@
     {
         "id": 1,
         "caption": "Desarrollador Web Fullstack",
-        "company" : "DePC Suite",
+        "company": "DePC Suite",
         "img": "images/depc.png",
         "date": "Agosto 2020-Enero 2021",
         "proyects": "PROYECTO INTEGRADOR CON BASE DE DATOS",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "caption": "Curso React Js",
-        "company" : "Coder House",
+        "company": "Coder House",
         "img": "images/coder.png",
         "date": "Diciembre 2021-Febrero 2022",
         "proyects": "PROYECTO INTEGRADOR CON BOOTSTRAP Y FIREBASE.",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "caption": "Curso Js",
-        "company" : "Coder House",
+        "company": "Coder House",
         "img": "images/coder.png",
         "date": "Septiembre 2021-Noviembre 2022",
         "proyects": "PROYECTO INTEGRADOR CON BOOSTRAP Y JQUERY.",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "caption": "Curso Analista Funcional",
-        "company" : "Educación IT",
+        "company": "Educación IT",
         "img": "images/Educacion-IT.jpg",
         "date": "Julio 2021-Septiembre 2021",
         "proyects": "PROYECTO INTEGRADOR GRUPAL CON JIRA.",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "caption": "Curso Typescript",
-        "company" : "Código Facilito",
+        "company": "Código Facilito",
         "img": "images/CodigoFacilitoLogo.png",
         "date": "Nov 2022-Nov 2022",
         "linkCompany": "https://www.codigofacilito.com/"
@@ -46,7 +46,7 @@
     {
         "id": 6,
         "caption": "Curso Consumo de APIs con AXIOS",
-        "company" : "Código Facilito",
+        "company": "Código Facilito",
         "img": "images/CodigoFacilitoLogo.png",
         "date": "Nov 2022-Nov 2022",
         "linkCompany": "https://www.codigofacilito.com/"
@@ -54,9 +54,18 @@
     {
         "id": 7,
         "caption": "Curso Redux desde Cero",
-        "company" : "Código Facilito",
+        "company": "Código Facilito",
         "img": "images/CodigoFacilitoLogo.png",
         "date": "Dec 2022-Ene 2023",
         "linkCompany": "https://www.codigofacilito.com/"
+    },
+    {
+        "id": 8,
+        "caption": "Curso Diseño UX",
+        "company": "CENEC Málaga",
+        "img": "images/Cenec.png",
+        "proyects": "Proyecto grupal e individual creado en FIGMA.",
+        "date": "Jul 2023-Aug 2023",
+        "linkCompany": "http://www.cenecmalaga.es/"
     }
 ]

@@ -73,5 +73,15 @@
         "id": 19,
         "caption": "MongoDB",
         "icon": "images/MongoDB.jpeg"
+    },
+    {
+        "id": 20,
+        "caption": "Figma",
+        "icon": "images/Figma.jpeg"
+    },
+    {
+        "id": 21,
+        "caption": "BitBucket",
+        "icon": "images/BitBucket.jpeg"
     }
 ]
