@@ -1,7 +1,8 @@
 import Proyects from "../Proyects.json"
 import { Row } from "react-bootstrap";
 
-const CardProyectos = () => {
+const CardProyectos = (props) => {
+    const proyectosQ = props.projectsQ
     const verOnline = (URL) => {
         if (URL !== "") {
             return (<div className="col-6 float-right linksProyectos"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a></div>)
@@ -13,7 +14,7 @@ const CardProyectos = () => {
         }
     }
     return (
-        Proyects && Proyects.map(proyect => {
+        Proyects && Proyects.slice(0, proyectosQ).map(proyect => {
             return (
                 <div className="col-sm-4 col-12" key={proyect.id}>
                     <div className="card shadow mb-3">
@@ -24,7 +25,7 @@ const CardProyectos = () => {
                             <Row className="sv">
                                 <h2 className="my-2 text-center">{proyect.caption}</h2>
                             </Row>
-                            <Row className="mx-1 my-3" style={{minHeight:"6rem"}}>
+                            <Row className="mx-1 my-3" style={{ minHeight: "6rem" }}>
                                 <p>{proyect.description}</p>
                             </Row>
                             <Row className="mb-5">

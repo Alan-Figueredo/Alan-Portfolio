@@ -2,8 +2,13 @@ import {  Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Proyectos.css";
 import CardProyectos from "./CardProyectos";
+import Projects from "../Proyects.json"
+import { useState } from "react";
 
 export const Proyectos = () =>{
+    const [proyectos, setProyectos] = useState(3)
+    const [hidden, setHidden] = useState(false)
+    console.log(proyectos)
     return(
         <>
             <Container id="proyectos" className="proyectos">
@@ -18,7 +23,8 @@ export const Proyectos = () =>{
                     </div>
                 </Row>          
                 <Row>
-                    <CardProyectos/>
+                    <CardProyectos projectsQ={proyectos} />
+                    <button  className="verMas w-25 m-auto"  hidden={hidden} onClick={()=>{setProyectos(Projects.length); setHidden(!hidden)}}>Ver más</button>
                 </Row>
             </Container>
         </>
