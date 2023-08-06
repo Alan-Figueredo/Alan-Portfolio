@@ -16,7 +16,7 @@ export const Contacto = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if (!name || !email) {
+        if (name.length < 1 || email.length < 1) {
             setAlertaMensajeError(false);
         }
         else {
@@ -46,14 +46,7 @@ export const Contacto = () => {
                         <img alt="avion" className="img-fluid" src="images/avion.jfif" />
                     </div>
                     <div className="col-12 col-sm-6">
-                        <form action="" method="POST" ref={form} onSubmit={sendEmail}>                            <div id="alertaMensaje">
-                            <div className="alert alert-success text-center" hidden={alertaMensaje} role="alert">
-                                ¡Se ha enviado el mensaje correctamente!
-                            </div>
-                            <div className="alert alert-danger text-center" hidden={alertaMensajeError} role="alert">
-                                ¡Faltan completar datos!
-                            </div>
-                        </div>
+                        <form action="" method="POST" ref={form} onSubmit={sendEmail}>
                             <input type="text" name="name" id="nombre" placeholder="Nombre" className="shadow form-control" onChange={(e) => { setName(e.target.value) }} /><br />
                             <input type="email" name="email" id="email" placeholder="Email" className="shadow form-control" onChange={(e) => { setEmail(e.target.value) }} />
                             <textarea name="message" id="comentarios" cols="78" rows="10" placeholder="Comentarios..." className="shadow form-control" />
