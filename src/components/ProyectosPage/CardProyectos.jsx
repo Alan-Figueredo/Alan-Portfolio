@@ -1,4 +1,3 @@
-import Proyects from "../Proyects.json"
 import { Row } from "react-bootstrap";
 
 const CardProyectos = (props) => {
