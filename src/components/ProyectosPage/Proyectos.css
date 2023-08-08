@@ -24,10 +24,16 @@
 .proyectos #p1 {
     color: #6A6A6A;
 }
-
+.nav-tabs{
+    font-size: 18px !important;
+    margin-left: 0.9rem;
+}
 .proyectos h2 {
     color: white;
     font-size: 15px;
+}
+#proyectos .nav{
+    flex-wrap: initial ;
 }
 
 #cf {
@@ -60,10 +66,16 @@
 .proyectos {
     margin-bottom: 15vh;
 }
+.verMas{
+    width: 25%;
+}
 
 @media screen and (max-width: 800px) {
     .linksProyectos{
         font-size: 10px
+    }
+    .verMas{
+        width: 50%;
     }
     .btn {
         background-color: #370A6D;

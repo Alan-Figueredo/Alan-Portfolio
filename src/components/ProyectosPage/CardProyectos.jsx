@@ -3,6 +3,7 @@ import { Row } from "react-bootstrap";
 
 const CardProyectos = (props) => {
     const proyectosQ = props.projectsQ
+    const array = props.array;
     const verOnline = (URL) => {
         if (URL !== "") {
             return (<div className="col-6 float-right linksProyectos"><a href={URL} target="_blank" rel="noopener noreferrer" className="btn">Ver online</a></div>)
@@ -14,7 +15,7 @@ const CardProyectos = (props) => {
         }
     }
     return (
-        Proyects && Proyects.slice(0, proyectosQ).map(proyect => {
+        array && array.slice(0, proyectosQ).map(proyect => {
             return (
                 <div className="col-sm-4 col-12" key={proyect.id}>
                     <div className="card shadow mb-3">

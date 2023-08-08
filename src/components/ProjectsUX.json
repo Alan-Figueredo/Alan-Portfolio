@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "caption": "Cajero Santander",
+        "img": "images/Santander.png",
+        "description": "Rediseño interfaz banco Santander para extracción de dinero en cuenta",
+        "onlineURL": "https://www.figma.com/file/bG3Y4x1fRshTcTVEmUhKco/Santa-Banca?type=design&mode=design&t=tAXXY2nBb8AhSNO6-1",
+        "code": "https://drive.google.com/drive/folders/1STeQg6Ryaezbut8dcYg0bfTMYkkYfSr_?usp=sharing"
+    },
+    {
+        "id": 2,
+        "caption": "Sanidapp",
+        "img": "images/Sanidapp.jpg",
+        "description": "Trabajo grupal de curso Diseño UX en CENEC. Rediseño de app de gestión de citas médicas",
+        "onlineURL": "https://www.figma.com/proto/sl88DTJ33dmIwuaZoh9TeN/Untitled?page-id=0%3A1&type=design&node-id=70-343&viewport=156%2C-87%2C0.09&t=QnWnpeRcDbtHInhL-1&scaling=scale-down&starting-point-node-id=70%3A343&show-proto-sidebar=1&mode=design",
+        "code": "https://drive.google.com/drive/folders/15qW1Egfh3ywVuAlI5II4uRFkO8NlT62W?usp=drive_link"
+    }
+]
