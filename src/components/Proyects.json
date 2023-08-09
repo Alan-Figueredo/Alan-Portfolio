@@ -2,7 +2,7 @@
     {
         "id": 1,
         "caption": "Prepaid Standard",
-        "img": "images/Steam.png",
+        "img": "images/prepaid.png",
         "description": "Template para página de seguros sociales creada en conjunto con mi hermano Kevin Figueredo",
         "onlineURL": "https://prepaid-template-bgds-kevinfigueredo2000.vercel.app/"
     },
