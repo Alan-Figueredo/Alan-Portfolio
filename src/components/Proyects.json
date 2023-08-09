@@ -1,6 +1,13 @@
 [
     {
         "id": 1,
+        "caption": "Prepaid Standard",
+        "img": "images/Steam.png",
+        "description": "Template para página de seguros sociales creada en conjunto con mi hermano Kevin Figueredo",
+        "onlineURL": "https://prepaid-template-bgds-kevinfigueredo2000.vercel.app/"
+    },
+    {
+        "id": 2,
         "caption": "GameCloud",
         "img": "images/Steam.png",
         "description": "Muestreo de todos los juegos de la tienda de Steam. Se creo utilizando la API de Steam de RapidApi",
@@ -8,7 +15,7 @@
         "code": "https://github.com/Alan-Figueredo/gamecloud"
     },
     {
-        "id": 2,
+        "id": 3,
         "caption": "Coffix Web Design",
         "img": "images/coffix.png",
         "description": "Página personal donde presento mis servicios como desarrollador freelance",
@@ -16,7 +23,7 @@
         "code": ""
     },
     {
-        "id": 3,
+        "id": 4,
         "caption": "De la Cruz Peluquría",
         "img": "images/ProyectoDeLaCruz.png",
         "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
@@ -24,7 +31,7 @@
         "code": ""
     },
     {
-        "id": 4,
+        "id": 5,
         "caption": "Tienda creada con REACT",
         "img": "images/Tienda-react.png",
         "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
@@ -32,7 +39,7 @@
         "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
     },
     {
-        "id": 5,
+        "id": 6,
         "caption": "Tienda creada con JS",
         "img": "images/Tienda-JS.png",
         "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
@@ -40,7 +47,7 @@
         "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
     },
     {
-        "id": 6,
+        "id": 7,
         "caption": "ABM CLIENTES",
         "img": "images/abmclientes.png",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
