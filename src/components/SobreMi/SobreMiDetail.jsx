@@ -12,7 +12,7 @@ export const SobreMiDetail = () => {
                 <Row className="my-5 justify-content-center">
                     <a className="col-sm-1 col-6 text-sm text-center" href="https://github.com/Alan-Figueredo" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="fab fa-github" /></a>
                     <a className="col-sm-4 col-6 text-sm text-center" href="https://www.linkedin.com/in/alan-figueredo/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} className="fab fa-linkedin-in" /></a>
-                    <a className="col-sm-4 col-10 mt-sm-0 mt-2 nav-link cv2 text-sm text-center " href="https://drive.google.com/file/d/1fadJgAv0BKz1vYJQmRRnyK3Qlt_-udde/view?usp=share_link" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+                    <a className="col-sm-4 col-10 mt-sm-0 mt-2 nav-link cv2 text-sm text-center " href="https://drive.google.com/file/d/1_KachtCDyvc1kKi2pb5Gk3JAYwcw3aLv/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Descargar CV</a>
                 </Row>
             </div>
             <div className="col-12 mt-5 mb-4 mt-sm-0 col-sm-6 d-flex">
