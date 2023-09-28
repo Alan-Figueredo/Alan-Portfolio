@@ -11,7 +11,7 @@
         "caption": "App2u",
         "img": "images/app2u.png",
         "description": "Página web creada para el proyecto App2u. Creada con Vite, React.JS y Bootstrap.",
-        "onlineURL": "app2u.vercel.app"
+        "onlineURL": "https://app2u.vercel.app/"
     },
     {
         "id": 3,
