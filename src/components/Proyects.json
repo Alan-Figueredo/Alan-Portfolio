@@ -3,35 +3,18 @@
         "id": 1,
         "caption": "Prepaid Standard",
         "img": "images/prepaid.png",
-        "description": "Template para página de seguros sociales creada en conjunto con mi hermano Kevin Figueredo",
+        "description": "Template para página de seguros sociales creada en conjunto con mi hermano Kevin Figueredo.",
         "onlineURL": "https://prepaid-template-bgds-kevinfigueredo2000.vercel.app/"
     },
     {
         "id": 2,
-        "caption": "GameCloud",
-        "img": "images/Steam.png",
-        "description": "Muestreo de todos los juegos de la tienda de Steam. Se creo utilizando la API de Steam de RapidApi",
-        "onlineURL": "https://steamstoremock.vercel.app/",
-        "code": "https://github.com/Alan-Figueredo/gamecloud"
+        "caption": "App2u",
+        "img": "images/app2u.png",
+        "description": "Página web creada para el proyecto App2u. Creada con Vite, React.JS y Bootstrap.",
+        "onlineURL": "https://prepaid-template-bgds-kevinfigueredo2000.vercel.app/"
     },
     {
         "id": 3,
-        "caption": "Coffix Web Design",
-        "img": "images/coffix.png",
-        "description": "Página personal donde presento mis servicios como desarrollador freelance",
-        "onlineURL": "https://coffix-web.com",
-        "code": ""
-    },
-    {
-        "id": 4,
-        "caption": "De la Cruz Peluquría",
-        "img": "images/ProyectoDeLaCruz.png",
-        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
-        "onlineURL": "https://delacruzpeluqueria.netlify.app/",
-        "code": ""
-    },
-    {
-        "id": 5,
         "caption": "Tienda creada con REACT",
         "img": "images/Tienda-react.png",
         "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
@@ -39,7 +22,31 @@
         "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
     },
     {
+        "id": 4,
+        "caption": "Coffix Web Design",
+        "img": "images/coffix.png",
+        "description": "Página personal donde presento mis servicios como desarrollador freelance",
+        "onlineURL": "https://coffix-web.com",
+        "code": ""
+    },
+    {
+        "id": 5,
+        "caption": "De la Cruz Peluquría",
+        "img": "images/ProyectoDeLaCruz.png",
+        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
+        "onlineURL": "https://delacruzpeluqueria.netlify.app/",
+        "code": ""
+    },
+    {
         "id": 6,
+        "caption": "GameCloud",
+        "img": "images/Steam.png",
+        "description": "Muestreo de todos los juegos de la tienda de Steam. Se creo utilizando la API de Steam de RapidApi",
+        "onlineURL": "https://steamstoremock.vercel.app/",
+        "code": "https://github.com/Alan-Figueredo/gamecloud"
+    },
+    {
+        "id": 7,
         "caption": "Tienda creada con JS",
         "img": "images/Tienda-JS.png",
         "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
@@ -47,7 +54,7 @@
         "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
     },
     {
-        "id": 7,
+        "id": 8,
         "caption": "ABM CLIENTES",
         "img": "images/abmclientes.png",
         "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
