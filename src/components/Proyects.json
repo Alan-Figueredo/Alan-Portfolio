@@ -13,15 +13,14 @@
         "description": "Página web creada para el proyecto App2u. Creada con Vite, React.JS y Bootstrap.",
         "onlineURL": "https://app2u.vercel.app/",
         "code": "https://github.com/Alan-Figueredo/app2u.git"
-
     },
     {
         "id": 3,
-        "caption": "Tienda creada con REACT",
-        "img": "images/Tienda-react.png",
-        "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
-        "onlineURL": "https://tusbebidasonline.netlify.app/",
-        "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
+        "caption": "De la Cruz Peluquría",
+        "img": "images/ProyectoDeLaCruz.png",
+        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
+        "onlineURL": "https://delacruzpeluqueria.netlify.app/",
+        "code": ""
     },
     {
         "id": 4,
@@ -33,19 +32,19 @@
     },
     {
         "id": 5,
-        "caption": "De la Cruz Peluquría",
-        "img": "images/ProyectoDeLaCruz.png",
-        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
-        "onlineURL": "https://delacruzpeluqueria.netlify.app/",
-        "code": ""
-    },
-    {
-        "id": 6,
         "caption": "GameCloud",
         "img": "images/Steam.png",
         "description": "Muestreo de todos los juegos de la tienda de Steam. Se creo utilizando la API de Steam de RapidApi",
         "onlineURL": "https://steamstoremock.vercel.app/",
         "code": "https://github.com/Alan-Figueredo/gamecloud"
+    },
+    {
+        "id": 6,
+        "caption": "Tienda creada con REACT",
+        "img": "images/Tienda-react.png",
+        "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
+        "onlineURL": "https://tusbebidasonline.netlify.app/",
+        "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
     },
     {
         "id": 7,
