@@ -1,87 +1,87 @@
 [
     {
         "id": 1,
-        "caption": "Javascript",
-        "icon": "images/js.png"
-    },
-    {
-        "id": 2,
-        "caption": "Git",
-        "icon": "images/git.png"
-    },
-    {
-        "id": 3,
-        "caption": "HTML-5",
-        "icon": "images/html5.png"
-    },
-    {
-        "id": 4,
-        "caption": "React Js",
+        "caption": "React.js",
         "icon": "images/react.png"
     },
     {
-        "id": 5,
-        "caption": "Jquery",
-        "icon" : "images/jquery.png"
+        "id": 2,
+        "caption": "JavaScript ES6",
+        "icon": "images/js.png"
     },
     {
-        "id": 6,
+        "id": 3,
+        "caption": "Styled Components",
+        "icon": "images/styled-components.png"
+    },
+    {
+        "id": 4,
         "caption": "Bootstrap",
         "icon": "images/boot.png"
     },
     {
-        "id": 10,
+        "id": 6,
+        "caption": "Axios",
+        "icon": "images/Axios-Logo.png"
+    },
+    {
+        "id": 7,
+        "caption": "Next.js",
+        "icon": "images/nextjs.png"
+    },
+    {
+        "id": 8,
         "caption": "CSS",
         "icon": "images/css.png"
     },
     {
+        "id": 9,
+        "caption": "HTML",
+        "icon": "images/html5.png"
+    },
+    {
+        "id": 10,
+        "caption": "C# .NET",
+        "icon": "images/dotnet.png"
+    },
+    {
         "id": 11,
-        "caption": "PHP",
-        "icon": "images/php.png"
+        "caption": "Firebase",
+        "icon": "images/firebase.png"
     },
     {
         "id": 13,
-        "caption": "AXIOS",
-        "icon": "images/Axios-Logo.png"
-    },
-    {
-        "id": 14,
-        "caption": "REDUX",
-        "icon": "images/Redux.jpeg"
-    },
-    {
-        "id": 15,
-        "caption": "Typescript",
-        "icon": "images/Typescript.jpeg"
-    },
-    {
-        "id": 16,
-        "caption": "Node.JS",
-        "icon": "images/Node.jpeg"
-    },
-    {
-        "id": 17,
-        "caption": "Express",
-        "icon": "images/Express.jpeg"
-    },
-    {
-        "id": 18,
-        "caption": "MySQL",
-        "icon": "images/MySql.jpeg"
-    },
-    {
-        "id": 19,
         "caption": "MongoDB",
         "icon": "images/MongoDB.jpeg"
     },
     {
-        "id": 20,
-        "caption": "Figma",
-        "icon": "images/Figma.jpeg"
+        "id": 14,
+        "caption": "SQL Server",
+        "icon": "images/sqlserver.png"
     },
     {
-        "id": 21,
-        "caption": "BitBucket",
+        "id": 15,
+        "caption": "GitHub",
+        "icon": "images/github.png"
+    },
+    {
+        "id": 16,
+        "caption": "Bitbucket",
         "icon": "images/BitBucket.jpeg"
+    },
+    {
+        "id": 17,
+        "caption": "Jira",
+        "icon": "images/jira.png"
+    },
+    {
+        "id": 18,
+        "caption": "Jest",
+        "icon": "images/jest.png"
+    },
+    {
+        "id": 19,
+        "caption": "React Testing Library",
+        "icon": "images/react-testing-library.png"
     }
 ]

@@ -1,38 +1,42 @@
 [
     {
         "id": 1,
-        "caption": "React Developer",
-        "company" : "BOTS Logistics",
-        "img": "images/BOTS.jfif",
-        "date": "Apr 2022-Feb 2023",
-        "tasks": ["Desarrollo de proyectos con React", "Versionado con Bitbucket", "Estilado con Bootstrap"],
-        "linkCompany": "https://www.botslogistics.com/"
+        "caption": "Fullstack Developer",
+        "company": "AERTEC Solutions",
+        "img": "images/aertec_logo.png",
+        "date": "Nov 2023-Present",
+        "tasks": [
+            "Migración y refactorización de aplicaciones frontend a gran escala",
+            "Análisis de soluciones e implementación de mejoras técnicas",
+            "Desarrollo backend y gestión de bases de datos cuando fue requerido",
+            "Escritura de tests unitarios y documentación técnica"
+        ],
+        "linkCompany": "https://aertecsolutions.com/"
     },
     {
         "id": 2,
         "caption": "React Developer",
-        "company" : "Peluquería de la Cruz",
-        "img": "images/LOGO_DE_LA_CRUZ.jpg",
-        "date": "Dec 2021-Mar 2022",
-        "tasks": ["Desarrollo de página para una peluquería desde cero con React", "Versionado con GIT", "Estilado con Bootstrap"],
-        "linkCompany": "https://delacruzpeluqueria.netlify.app/"
+        "company": "Bots Logistics",
+        "img": "images/BOTS.jfif",
+        "date": "Apr 2022-Nov 2023",
+        "tasks": [
+            "Desarrollo completo de frontend responsive desde cero",
+            "Integración de APIs y diseño de componentes con React, Hooks y Styled Components",
+            "Colaboración en sprints ágiles y comunicación con equipos multidisciplinarios"
+        ],
+        "linkCompany": "https://www.botslogistics.com/"
     },
     {
         "id": 3,
-        "caption": "Analista Funcional",
-        "company" : "Accenture",
+        "caption": "React Developer",
+        "company": "Accenture",
         "img": "images/accenture-logo.png",
-        "date": "SEP 2021-MAY 2022",
-        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
+        "date": "Dec 2021-Mar 2022",
+        "tasks": [
+            "Desarrollo de frontend responsive integrado con APIs de Instagram y Firebase",
+            "Diseño de componentes de UI alineados con la identidad de marca del cliente",
+            "Optimización de rendimiento y accesibilidad del sitio en distintos dispositivos"
+        ],
         "linkCompany": "https://www.accenture.com/ar-es"
-    },
-    {
-        "id": 4,
-        "caption": "Analista Funcional",
-        "company" : "Prüne",
-        "img": "images/prune-logo.png",
-        "date": "Jul 2019-Sep 2021",
-        "tasks": ["Definir requerimientos de usuario", "Analizar rendimiento de sistemas existentes", "Preparar documentacion"],
-        "linkCompany": "https://www.prune.com.ar/"
     }
 ]

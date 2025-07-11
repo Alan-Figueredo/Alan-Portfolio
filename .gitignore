@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# filepath: c:\Users\Usuario\Proyectos\Alan-Portfolio\.gitignore
+.env

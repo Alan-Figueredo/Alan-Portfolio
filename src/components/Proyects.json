@@ -3,7 +3,7 @@
         "id": 1,
         "caption": "Prepaid Standard",
         "img": "images/prepaid.png",
-        "description": "Template para página de seguros sociales creada en conjunto con mi hermano Kevin Figueredo.",
+        "description": "Template para página de seguros de salud.",
         "onlineURL": "https://prepaid-template-bgds-kevinfigueredo2000.vercel.app/"
     },
     {
@@ -18,7 +18,7 @@
         "id": 3,
         "caption": "De la Cruz Peluquría",
         "img": "images/ProyectoDeLaCruz.png",
-        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON",
+        "description": "Página para una peluquería creada desde 0 programada en React, Bootstrap, AXIOS, Firebase y JSON. ACUALMENTE FUERA DE SERVICIO",
         "onlineURL": "https://delacruzpeluqueria.netlify.app/",
         "code": ""
     },
@@ -45,21 +45,5 @@
         "description": "Tienda creada con React, firebase y Bootstrap creada para el curso de ReactJS de CoderHouse, en la cual destaqué con nota de 10.",
         "onlineURL": "https://tusbebidasonline.netlify.app/",
         "code": "https://github.com/Alan-Figueredo/TusBebidasOnline"
-    },
-    {
-        "id": 7,
-        "caption": "Tienda creada con JS",
-        "img": "images/Tienda-JS.png",
-        "description": "Tienda creada con JS, JQUERY y Bootstrap para el curso de Javascript de Coderhouse, en el cual destaqué con nota de 9.",
-        "onlineURL": "",
-        "code": "https://github.com/Alan-Figueredo/simulador-de-compras"
-    },
-    {
-        "id": 8,
-        "caption": "ABM CLIENTES",
-        "img": "images/abmclientes.png",
-        "description": "Alta, Baja, modificación de un registro de clientes empleando:. Realizado en HTML, CSS, PHP, Bootstrap y Json.",
-        "onlineURL": "",
-        "code": "https://github.com/Alan-Figueredo/abmventas"
     }
 ]

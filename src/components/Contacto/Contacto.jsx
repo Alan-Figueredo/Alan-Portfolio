@@ -20,17 +20,21 @@ export const Contacto = () => {
             setAlertaMensajeError(false);
         }
         else {
-            emailjs.sendForm('gmail', 'template_qmxhiv3', e.target, '-1FLgxPUmudOciL-d')
+            emailjs.sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                e.target,
+                process.env.REACT_APP_EMAILJS_USER_ID
+            )
                 .then((result) => {
                     console.log(result.text);
                     setAlertaMensaje(false);
-                    setAlertaMensajeError(true)
+                    setAlertaMensajeError(true);
                 }, (error) => {
                     console.log(error.text);
                 });
             e.target.reset();
         }
-
     };
     return (
         <>

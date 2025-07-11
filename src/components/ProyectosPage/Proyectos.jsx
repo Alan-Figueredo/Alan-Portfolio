@@ -8,7 +8,6 @@ import ProyectsUX from "../ProjectsUX.json"
 export const Proyectos = () => {
     const [proyectos, setProyectos] = useState(3)
     const [hidden, setHidden] = useState(false)
-    console.log(proyectos)
     return (
         <>
             <Container id="proyectos" className="proyectos">
