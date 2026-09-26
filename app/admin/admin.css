@@ -1,0 +1,30 @@
+.adminShell, .loginPage { min-height: 100vh; background: #f5f4ef; color: #171917; font-family: "IBM Plex Sans", sans-serif; }
+.loginPage { display: grid; place-items: center; padding: 2rem; }
+.loginPage > div { width: min(100%, 560px); border: 1px solid #c7c8c2; background: white; padding: clamp(2rem, 6vw, 5rem); }
+.loginPage h1, .adminHeader h1 { font-family: "Newsreader", serif; font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; margin: .5rem 0 1rem; }
+.loginPage button, .save { border: 0; background: #194cff; color: white; padding: .85rem 1.2rem; cursor: pointer; margin: 1rem 0; }
+.loginPage a { display: block; font-size: .8rem; }
+.adminKicker { color: #194cff; text-transform: uppercase; letter-spacing: .14em; font-size: .7rem; font-weight: 600; }
+.adminShell { max-width: 1280px; margin: auto; padding: clamp(1.2rem, 4vw, 4rem); }
+.adminHeader { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; border-bottom: 1px solid #c7c8c2; padding-bottom: 2rem; }
+.adminHeader > div:last-child { display: flex; align-items: center; gap: 1rem; }
+.adminHeader form { margin: 0; }
+.adminHeader button, .secondary { padding: .65rem 1rem; background: transparent; border: 1px solid #999; cursor: pointer; }
+.adminShell section { padding: 3rem 0; border-bottom: 1px solid #c7c8c2; }
+.adminShell section > h2 { font-family: "Newsreader", serif; font-size: 2.5rem; font-weight: 400; }
+.adminForm { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 1.5rem 0; }
+.adminForm.compact { padding-inline: 1rem; }
+.adminForm label { display: flex; flex-direction: column; gap: .35rem; color: #555; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; }
+.adminForm input, .adminForm textarea, .adminForm select { border: 1px solid #c7c8c2; background: white; color: #171917; padding: .75rem; text-transform: none; letter-spacing: normal; }
+.adminForm .wide { grid-column: span 2; }
+.adminForm .check { align-self: center; flex-direction: row; align-items: center; }
+.adminForm .check input { width: auto; }
+.adminForm .save { justify-self: start; }
+.adminList > details { background: white; border: 1px solid #d2d2cc; margin-bottom: .65rem; padding: 0 1rem 1rem; }
+.adminList summary { cursor: pointer; padding: 1rem 0; font-weight: 600; }
+.newItem { border-style: dashed !important; }
+.newItem > summary { color: #194cff; }
+.danger { border: 0; background: transparent; color: #a52525; text-decoration: underline; cursor: pointer; padding: .5rem 0; }
+.nested { margin: 1rem; padding: 1rem; background: #f1f2ef; }
+.nested details { border-top: 1px solid #d2d2cc; }
+@media(max-width:700px) { .adminHeader { flex-direction: column; }.adminForm { grid-template-columns: 1fr; }.adminForm .wide { grid-column: auto; } }

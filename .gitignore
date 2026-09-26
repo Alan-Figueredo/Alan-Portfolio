@@ -24,3 +24,10 @@ yarn-error.log*
 
 # filepath: c:\Users\Usuario\Proyectos\Alan-Portfolio\.gitignore
 .env
+portfolio.db
+portfolio.db-*
+.next/
+out/
+playwright-report/
+test-results/
+*.tsbuildinfo

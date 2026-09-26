@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Alan Figueredo — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio bilingüe construido con Next.js App Router, TypeScript, Turso/LibSQL y Drizzle ORM. Las rutas públicas se generan como HTML estático y el panel privado usa GitHub OAuth, Server Actions y Vercel Blob.
 
-## Available Scripts
+## Desarrollo local
 
-In the project directory, you can run:
+Requiere Node.js 20 o superior.
 
-### `npm start`
+```bash
+npm install
+cp .env.example .env.local
+npm run dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`npm run dev` crea automáticamente `portfolio.db`, aplica el esquema e importa el contenido inicial de manera idempotente. Si se definen `TURSO_DATABASE_URL` y `TURSO_AUTH_TOKEN`, el mismo proceso trabaja contra Turso.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Rutas principales:
 
-### `npm test`
+- `/es` y `/en`: portfolio SSG.
+- `/admin`: panel privado.
+- `/cv`: enlace estable al último PDF cargado.
+- `/sitemap.xml`, `/robots.txt` y `/manifest.webmanifest`: SEO y metadata.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Servicios y variables
 
-### `npm run build`
+Copiar `.env.example` a `.env.local` y configurar:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `NEXT_PUBLIC_SITE_URL`: dominio de producción, sin barra final.
+- `TURSO_DATABASE_URL` y `TURSO_AUTH_TOKEN`: base de datos de producción.
+- `AUTH_SECRET`, `AUTH_GITHUB_ID`, `AUTH_GITHUB_SECRET`: aplicación OAuth de GitHub.
+- `ADMIN_GITHUB_USER_ID`: ID numérico de la única cuenta autorizada; no usar el nombre de usuario.
+- `BLOB_READ_WRITE_TOKEN`: se añade automáticamente al conectar un store de Vercel Blob.
+- `EMAILJS_SERVICE_ID`, `EMAILJS_TEMPLATE_ID`, `EMAILJS_PUBLIC_KEY`: servicio del formulario.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+En GitHub OAuth, la callback de producción es `https://TU_DOMINIO/api/auth/callback/github`; en local es `http://localhost:3000/api/auth/callback/github`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Datos y publicación
 
-### `npm run eject`
+El esquema está en `lib/db/schema.ts`. No hay JSON de contenido ni consultas de datos desde el navegador. El panel permite editar y ordenar perfil, experiencia, tareas, proyectos, tecnologías, formación, idiomas e intereses. Un elemento publicado requiere textos ES/EN.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Las imágenes aceptan JPEG, PNG, WebP o AVIF hasta 5 MB. El CV debe ser PDF de hasta 10 MB. Al guardar, las rutas `/es` y `/en` se regeneran y los blobs sustituidos sin referencias se eliminan.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Calidad
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run typecheck
+npm test
+npm run build
+npx playwright install chromium
+npm run test:e2e
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+El resumen de `next build` debe marcar `/es` y `/en` como `SSG`; `/admin`, `/api/auth` y `/cv` son las únicas rutas dinámicas de aplicación.
 
-## Learn More
+## Despliegue en Vercel
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Crear la base de datos Turso y añadir sus credenciales al proyecto.
+2. Conectar Vercel Blob.
+3. Crear la GitHub OAuth App y cargar las variables de Auth.js.
+4. Añadir las variables EmailJS y `NEXT_PUBLIC_SITE_URL`.
+5. Desplegar. El build prepara el esquema y la semilla solo se inserta si la base está vacía.
+6. Entrar en `/admin`, revisar el contenido y subir el CV actualizado.
