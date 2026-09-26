@@ -28,6 +28,7 @@ export const siteSettings = sqliteTable("site_settings", {
   seoTitleEn: text("seo_title_en").notNull(),
   seoDescriptionEs: text("seo_description_es").notNull(),
   seoDescriptionEn: text("seo_description_en").notNull(),
+  sectionOrder: text("section_order").notNull().default("[\"experience\",\"projects\",\"technologies\",\"education\",\"personal\",\"contact\"]"),
 });
 
 export const experiences = sqliteTable("experiences", {

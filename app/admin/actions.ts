@@ -7,6 +7,7 @@ import { z } from "zod";
 import { requireAdmin } from "@/lib/admin";
 import { db } from "@/lib/db";
 import { education, experiences, experienceTasks, mediaAssets, personalItems, projects, siteSettings, technologies } from "@/lib/db/schema";
+import { SECTION_KEYS, type SectionKey } from "@/lib/db/queries";
 
 const text = (data: FormData, key: string) => String(data.get(key) ?? "").trim();
 const optional = (data: FormData, key: string) => text(data, key) || null;
@@ -18,6 +19,31 @@ function refreshPublicPages() {
   revalidatePath("/en");
   revalidatePath("/sitemap.xml");
   revalidatePath("/cv");
+}
+
+const reorderTables = {
+  experience: experiences,
+  projects,
+  technologies,
+  education,
+} as const;
+
+export async function reorderContentAction(kind: keyof typeof reorderTables, orderedIds: number[]) {
+  await requireAdmin();
+  const table = reorderTables[kind];
+  if (!table || !Array.isArray(orderedIds) || orderedIds.some((id) => !Number.isInteger(id) || id <= 0)) throw new Error("Orden no válido.");
+  for (const [index, id] of orderedIds.entries()) {
+    await db.update(table).set({ sortOrder: index + 1 }).where(eq(table.id, id));
+  }
+  refreshPublicPages();
+}
+
+export async function saveSectionOrderAction(order: SectionKey[]) {
+  await requireAdmin();
+  const normalized = Array.isArray(order) ? order.filter((key): key is SectionKey => SECTION_KEYS.includes(key)) : [];
+  if (normalized.length !== SECTION_KEYS.length || new Set(normalized).size !== SECTION_KEYS.length) throw new Error("Orden de secciones no válido.");
+  await db.update(siteSettings).set({ sectionOrder: JSON.stringify(normalized) }).where(eq(siteSettings.id, 1));
+  refreshPublicPages();
 }
 
 async function uploadFile(file: File | null, kind: "image" | "cv") {

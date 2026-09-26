@@ -6,6 +6,7 @@ import {
   deleteContentAction, saveEducationAction, saveExperienceAction, savePersonalItemAction,
   saveProjectAction, saveSettingsAction, saveTaskAction, saveTechnologyAction,
 } from "./actions";
+import { SectionOrderEditor, SortableAdminList } from "./sortable-list";
 import "./admin.css";
 
 export const dynamic = "force-dynamic";
@@ -57,7 +58,7 @@ export default async function AdminPage() {
     <main className="adminShell">
       <header className="adminHeader"><div><p className="adminKicker">CMS privado</p><h1>Contenido del portfolio</h1></div><div><Link href="/es">Ver web</Link><form action={async () => { "use server"; await signOut({ redirectTo: "/es" }); }}><button className="secondary">Salir</button></form></div></header>
 
-      <section><h2>Perfil, SEO y CV</h2><form action={saveSettingsAction} className="adminForm">
+      <section><h2>Perfil, SEO y CV</h2><SectionOrderEditor initialOrder={content.sectionOrder} /><form action={saveSettingsAction} className="adminForm">
         <Field label="Nombre" name="name" value={settings.name} required />
         <Field label="Email" name="email" value={settings.email} type="email" required />
         <Field label="Etiqueta ES" name="eyebrowEs" value={settings.eyebrowEs} required /><Field label="Label EN" name="eyebrowEn" value={settings.eyebrowEn} required />
@@ -73,7 +74,7 @@ export default async function AdminPage() {
         <button className="save">Guardar perfil</button>
       </form></section>
 
-      <AdminCollection title="Experiencia" newLabel="Nueva experiencia" newForm={<ExperienceForm />}>
+      <AdminCollection title="Experiencia" kind="experience" items={content.experiences.map((item) => ({ id: item.id, label: `${item.company} — ${item.roleEs}` }))} newLabel="Nueva experiencia" newForm={<ExperienceForm />}>
         {content.experiences.map((item) => <details key={item.id}><summary>{item.company} — {item.roleEs}</summary><ExperienceForm item={item} /><DeleteButton kind="experience" id={item.id} />
           <div className="nested"><h3>Tareas</h3>{item.tasks.map((task) => <details key={task.id}><summary>{task.textEs}</summary><form action={saveTaskAction} className="adminForm compact"><input type="hidden" name="id" value={task.id} /><input type="hidden" name="experienceId" value={item.id} /><Area label="Tarea ES" name="textEs" value={task.textEs} required /><Area label="Task EN" name="textEn" value={task.textEn} required /><Field label="Orden" name="sortOrder" value={task.sortOrder} type="number" /><button className="save">Guardar</button></form><DeleteButton kind="task" id={task.id} /></details>)}
             <details><summary>Nueva tarea</summary><form action={saveTaskAction} className="adminForm compact"><input type="hidden" name="experienceId" value={item.id} /><Area label="Tarea ES" name="textEs" required /><Area label="Task EN" name="textEn" required /><Field label="Orden" name="sortOrder" type="number" /><button className="save">Añadir tarea</button></form></details>
@@ -81,13 +82,13 @@ export default async function AdminPage() {
         </details>)}
       </AdminCollection>
 
-      <AdminCollection title="Proyectos" newLabel="Nuevo proyecto" newForm={<ProjectForm />}>
+      <AdminCollection title="Proyectos" kind="projects" items={content.projects.map((item) => ({ id: item.id, label: item.title }))} newLabel="Nuevo proyecto" newForm={<ProjectForm />}>
         {content.projects.map((item) => <details key={item.id}><summary>{item.title}</summary><ProjectForm item={item} /><DeleteButton kind="project" id={item.id} /></details>)}
       </AdminCollection>
-      <AdminCollection title="Tecnologías" newLabel="Nueva tecnología" newForm={<TechnologyForm />}>
+      <AdminCollection title="Tecnologías" kind="technologies" items={content.technologies.map((item) => ({ id: item.id, label: item.name }))} newLabel="Nueva tecnología" newForm={<TechnologyForm />}>
         {content.technologies.map((item) => <details key={item.id}><summary>{item.name}</summary><TechnologyForm item={item} /><DeleteButton kind="technology" id={item.id} /></details>)}
       </AdminCollection>
-      <AdminCollection title="Formación" newLabel="Nueva formación" newForm={<EducationForm />}>
+      <AdminCollection title="Formación" kind="education" items={content.education.map((item) => ({ id: item.id, label: `${item.institution} — ${item.titleEs}` }))} newLabel="Nueva formación" newForm={<EducationForm />}>
         {content.education.map((item) => <details key={item.id}><summary>{item.institution} — {item.titleEs}</summary><EducationForm item={item} /><DeleteButton kind="education" id={item.id} /></details>)}
       </AdminCollection>
       <AdminCollection title="Idiomas e intereses" newLabel="Nuevo elemento" newForm={<PersonalForm />}>
@@ -97,8 +98,8 @@ export default async function AdminPage() {
   );
 }
 
-function AdminCollection({ title, newLabel, newForm, children }: { title: string; newLabel: string; newForm: React.ReactNode; children: React.ReactNode }) {
-  return <section><h2>{title}</h2><div className="adminList">{children}<details className="newItem"><summary>{newLabel}</summary>{newForm}</details></div></section>;
+function AdminCollection({ title, kind, items, newLabel, newForm, children }: { title: string; kind?: "experience" | "projects" | "technologies" | "education"; items?: { id: number; label: string }[]; newLabel: string; newForm: React.ReactNode; children: React.ReactNode[] }) {
+  return <section><h2>{title}</h2>{kind && items ? <SortableAdminList kind={kind} items={items} children={children} /> : <div className="adminList">{children}</div>}<div className="adminList"><details className="newItem"><summary>{newLabel}</summary>{newForm}</details></div></section>;
 }
 
 type WithPublishing = { id: number; sortOrder: number; published: boolean };

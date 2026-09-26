@@ -2,6 +2,33 @@ import type { Locale } from "./db/queries";
 
 export const locales: Locale[] = ["es", "en"];
 
+/**
+ * Returns the best supported locale from the browser's Accept-Language header.
+ * Spanish is the default so the site remains predictable when the header is
+ * missing or contains an unsupported language.
+ */
+export function getPreferredLocale(acceptLanguage: string | null | undefined): Locale {
+  if (!acceptLanguage) return "es";
+
+  const preferred = acceptLanguage
+    .split(",")
+    .map((entry) => {
+      const [language, ...parameters] = entry.trim().toLowerCase().split(";");
+      const quality = parameters.find((parameter) => parameter.trim().startsWith("q="));
+      const weight = quality ? Number.parseFloat(quality.trim().slice(2)) : 1;
+      return { language, weight: Number.isNaN(weight) ? 0 : weight };
+    })
+    .filter(({ language, weight }) => language && weight > 0)
+    .sort((a, b) => b.weight - a.weight);
+
+  const supported = preferred.find(
+    ({ language }) => language === "es" || language.startsWith("es-") || language === "en" || language.startsWith("en-"),
+  );
+
+  if (!supported) return "es";
+  return supported.language === "en" || supported.language.startsWith("en-") ? "en" : "es";
+}
+
 export const copy = {
   es: {
     skip: "Saltar al contenido",

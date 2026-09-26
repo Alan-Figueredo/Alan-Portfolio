@@ -13,6 +13,21 @@ import {
 
 export type Locale = "es" | "en";
 
+export const SECTION_KEYS = ["experience", "projects", "technologies", "education", "personal", "contact"] as const;
+export type SectionKey = (typeof SECTION_KEYS)[number];
+export const DEFAULT_SECTION_ORDER: SectionKey[] = [...SECTION_KEYS];
+
+function parseSectionOrder(value: string | null | undefined): SectionKey[] {
+  try {
+    const parsed = JSON.parse(value ?? "") as unknown;
+    if (!Array.isArray(parsed)) return DEFAULT_SECTION_ORDER;
+    const order = parsed.filter((item): item is SectionKey => typeof item === "string" && SECTION_KEYS.includes(item as SectionKey));
+    return [...order, ...DEFAULT_SECTION_ORDER.filter((key) => !order.includes(key))];
+  } catch {
+    return DEFAULT_SECTION_ORDER;
+  }
+}
+
 export async function getPortfolioContent(includeDrafts = false) {
   const published = <T extends { published: unknown }>(table: T) =>
     includeDrafts ? undefined : eq(table.published as never, true);
@@ -35,6 +50,7 @@ export async function getPortfolioContent(includeDrafts = false) {
 
   return {
     settings: settingsRows[0],
+    sectionOrder: parseSectionOrder(settingsRows[0]?.sectionOrder),
     experiences: experienceWithTasks,
     education: educationRows,
     technologies: technologyRows,

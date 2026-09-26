@@ -12,6 +12,25 @@
 .adminHeader button, .secondary { padding: .65rem 1rem; background: transparent; border: 1px solid #999; cursor: pointer; }
 .adminShell section { padding: 3rem 0; border-bottom: 1px solid #c7c8c2; }
 .adminShell section > h2 { font-family: "Newsreader", serif; font-size: 2.5rem; font-weight: 400; }
+.sectionOrderEditor { margin: 1rem 0 2rem; border: 1px solid #c7c8c2; background: #fff; padding: 0 1rem 1rem; }
+.sectionOrderEditor > summary { cursor: pointer; padding: 1rem 0; color: #194cff; font-weight: 600; }
+.sectionOrderEditor > p { color: #666; font-size: .85rem; }
+.sectionOrderList { display: grid; gap: .45rem; margin: 1rem 0; }
+.sectionOrderItem { display: flex; align-items: center; gap: .7rem; border: 1px solid #d2d2cc; padding: .7rem; background: #f8f8f4; }
+.sectionOrderItem span { display: flex; align-items: center; gap: .8rem; }
+.sectionOrderItem b { color: #194cff; font-size: .75rem; }
+.sortableList { display: grid; gap: .65rem; }
+.sortableItem { display: grid; grid-template-columns: 2.5rem 1fr; align-items: start; background: white; border: 1px solid #d2d2cc; transition: border-color .2s, box-shadow .2s, transform .2s; }
+.sortableItem.sortableDragging { opacity: .55; border-color: #194cff; box-shadow: 0 6px 18px rgba(25,76,255,.12); }
+.sortableContent { min-width: 0; }
+.sortableContent > details { border: 0; margin: 0; padding-bottom: 1rem; }
+.dragHandle { display: grid; place-items: center; align-self: stretch; border: 0; border-right: 1px solid #e0e0da; background: #f1f2ef; color: #6c716c; cursor: grab; padding: .5rem; touch-action: none; }
+.dragHandle:active { cursor: grabbing; }
+.sortActions { display: flex; justify-content: flex-end; padding: .8rem 0 0; }
+.sortSave { display: inline-flex; align-items: center; gap: .4rem; border: 1px solid #194cff; background: #194cff; color: white; padding: .65rem .9rem; cursor: pointer; }
+.sortSave:disabled { opacity: .65; cursor: wait; }
+.spin { animation: adminSpin .8s linear infinite; }
+@keyframes adminSpin { to { transform: rotate(360deg); } }
 .adminForm { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 1.5rem 0; }
 .adminForm.compact { padding-inline: 1rem; }
 .adminForm label { display: flex; flex-direction: column; gap: .35rem; color: #555; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; }

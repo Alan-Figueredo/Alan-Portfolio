@@ -6,7 +6,7 @@ const client = createClient({
 });
 
 const schema = [
-  `CREATE TABLE IF NOT EXISTS site_settings (id INTEGER PRIMARY KEY, name TEXT NOT NULL, eyebrow_es TEXT NOT NULL, eyebrow_en TEXT NOT NULL, headline_es TEXT NOT NULL, headline_en TEXT NOT NULL, about_es TEXT NOT NULL, about_en TEXT NOT NULL, location_es TEXT NOT NULL, location_en TEXT NOT NULL, availability_es TEXT NOT NULL, availability_en TEXT NOT NULL, email TEXT NOT NULL, whatsapp_url TEXT NOT NULL, github_url TEXT NOT NULL, linkedin_url TEXT NOT NULL, avatar_url TEXT NOT NULL, cv_url TEXT, seo_title_es TEXT NOT NULL, seo_title_en TEXT NOT NULL, seo_description_es TEXT NOT NULL, seo_description_en TEXT NOT NULL)`,
+  `CREATE TABLE IF NOT EXISTS site_settings (id INTEGER PRIMARY KEY, name TEXT NOT NULL, eyebrow_es TEXT NOT NULL, eyebrow_en TEXT NOT NULL, headline_es TEXT NOT NULL, headline_en TEXT NOT NULL, about_es TEXT NOT NULL, about_en TEXT NOT NULL, location_es TEXT NOT NULL, location_en TEXT NOT NULL, availability_es TEXT NOT NULL, availability_en TEXT NOT NULL, email TEXT NOT NULL, whatsapp_url TEXT NOT NULL, github_url TEXT NOT NULL, linkedin_url TEXT NOT NULL, avatar_url TEXT NOT NULL, cv_url TEXT, seo_title_es TEXT NOT NULL, seo_title_en TEXT NOT NULL, seo_description_es TEXT NOT NULL, seo_description_en TEXT NOT NULL, section_order TEXT NOT NULL DEFAULT '["experience","projects","technologies","education","personal","contact"]')`,
   `CREATE TABLE IF NOT EXISTS experiences (id INTEGER PRIMARY KEY AUTOINCREMENT, role_es TEXT NOT NULL, role_en TEXT NOT NULL, company TEXT NOT NULL, date_es TEXT NOT NULL, date_en TEXT NOT NULL, image_url TEXT, company_url TEXT, sort_order INTEGER NOT NULL DEFAULT 0, published INTEGER NOT NULL DEFAULT 1)`,
   `CREATE TABLE IF NOT EXISTS experience_tasks (id INTEGER PRIMARY KEY AUTOINCREMENT, experience_id INTEGER NOT NULL REFERENCES experiences(id) ON DELETE CASCADE, text_es TEXT NOT NULL, text_en TEXT NOT NULL, sort_order INTEGER NOT NULL DEFAULT 0)`,
   `CREATE TABLE IF NOT EXISTS education (id INTEGER PRIMARY KEY AUTOINCREMENT, title_es TEXT NOT NULL, title_en TEXT NOT NULL, institution TEXT NOT NULL, date_es TEXT NOT NULL, date_en TEXT NOT NULL, detail_es TEXT, detail_en TEXT, image_url TEXT, institution_url TEXT, sort_order INTEGER NOT NULL DEFAULT 0, published INTEGER NOT NULL DEFAULT 1)`,
@@ -17,11 +17,15 @@ const schema = [
 ];
 
 await client.batch(schema.map((sql) => ({ sql })), "write");
+const settingsColumns = await client.execute("PRAGMA table_info(site_settings)");
+if (!settingsColumns.rows.some((row) => row.name === "section_order")) {
+  await client.execute("ALTER TABLE site_settings ADD COLUMN section_order TEXT NOT NULL DEFAULT '[\"experience\",\"projects\",\"technologies\",\"education\",\"personal\",\"contact\"]'");
+}
 const existing = await client.execute("SELECT id FROM site_settings WHERE id = 1");
 
 if (existing.rows.length === 0) {
   await client.execute({
-    sql: `INSERT INTO site_settings VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    sql: `INSERT INTO site_settings VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     args: [
       "Alan Figueredo",
       "Desarrollador full stack · Málaga",
@@ -44,6 +48,7 @@ if (existing.rows.length === 0) {
       "Alan Figueredo · Full-stack Developer",
       "Portfolio de Alan Figueredo: experiencia, proyectos y tecnologías como desarrollador web full stack.",
       "Alan Figueredo's portfolio: experience, projects and technologies as a full-stack web developer.",
+      '["experience","projects","technologies","education","personal","contact"]',
     ],
   });
 
