@@ -7,6 +7,10 @@ declare module "next-auth" {
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   secret: process.env.AUTH_SECRET ?? (process.env.NODE_ENV === "development" ? "local-development-secret" : undefined),
+  // Vercel terminates TLS and forwards the original host to the Next.js server.
+  // Explicitly trusting that forwarded host prevents Auth.js from returning its
+  // generic Configuration error in production deployments.
+  trustHost: true,
   providers: process.env.AUTH_GITHUB_ID && process.env.AUTH_GITHUB_SECRET
     ? [GitHub({
         clientId: process.env.AUTH_GITHUB_ID,
