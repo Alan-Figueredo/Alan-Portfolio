@@ -29,6 +29,13 @@
 .sortActions { display: flex; justify-content: flex-end; padding: .8rem 0 0; }
 .sortSave { display: inline-flex; align-items: center; gap: .4rem; border: 1px solid #194cff; background: #194cff; color: white; padding: .65rem .9rem; cursor: pointer; }
 .sortSave:disabled { opacity: .65; cursor: wait; }
+.adminForm button[type="submit"] { display: inline-flex; align-items: center; gap: .4rem; }
+.adminForm button[type="submit"]:disabled, .danger:disabled { opacity: .65; cursor: wait; }
+.adminToast { position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 10; display: flex; align-items: center; gap: 1rem; max-width: min(28rem, calc(100vw - 2.5rem)); padding: .9rem 1rem; color: white; box-shadow: 0 12px 30px rgba(23,25,23,.18); animation: toastIn .2s ease-out; }
+.adminToast.success { background: #16734a; }
+.adminToast.error { background: #a52525; }
+.adminToast button { display: grid; place-items: center; border: 0; background: transparent; color: inherit; cursor: pointer; padding: .15rem; }
+@keyframes toastIn { from { opacity: 0; transform: translateY(.5rem); } to { opacity: 1; transform: translateY(0); } }
 .spin { animation: adminSpin .8s linear infinite; }
 @keyframes adminSpin { to { transform: rotate(360deg); } }
 .adminForm { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 1.5rem 0; }

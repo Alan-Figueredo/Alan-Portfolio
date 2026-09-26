@@ -85,11 +85,14 @@ export async function saveSettingsAction(data: FormData) {
   if (!current) throw new Error("Missing site settings");
   const avatar = await uploadFile(data.get("avatar") as File | null, "image");
   const cv = await uploadFile(data.get("cv") as File | null, "cv");
+  const email = text(data, "email");
+  const parsedEmail = email ? z.email().safeParse(email) : null;
+  if (parsedEmail && !parsedEmail.success) throw new Error("El email del perfil no es válido.");
   const values = {
     name: text(data, "name"), eyebrowEs: text(data, "eyebrowEs"), eyebrowEn: text(data, "eyebrowEn"),
     headlineEs: text(data, "headlineEs"), headlineEn: text(data, "headlineEn"), aboutEs: text(data, "aboutEs"), aboutEn: text(data, "aboutEn"),
     locationEs: text(data, "locationEs"), locationEn: text(data, "locationEn"), availabilityEs: text(data, "availabilityEs"), availabilityEn: text(data, "availabilityEn"),
-    email: z.email().parse(text(data, "email")), whatsappUrl: text(data, "whatsappUrl"), githubUrl: text(data, "githubUrl"), linkedinUrl: text(data, "linkedinUrl"),
+    email: email || current.email, whatsappUrl: text(data, "whatsappUrl"), githubUrl: text(data, "githubUrl"), linkedinUrl: text(data, "linkedinUrl"),
     avatarUrl: avatar ?? current.avatarUrl, cvUrl: cv ?? current.cvUrl, seoTitleEs: text(data, "seoTitleEs"), seoTitleEn: text(data, "seoTitleEn"),
     seoDescriptionEs: text(data, "seoDescriptionEs"), seoDescriptionEn: text(data, "seoDescriptionEn"),
   };
